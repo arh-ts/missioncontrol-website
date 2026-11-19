@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mission Control | See how work really moves</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
+.d{font-family:'Inter Tight',system-ui,sans-serif}
+.nl{transition:color .2s ease}.nl:hover{color:#0A0B0D}
+.b1{transition:background .2s ease,transform 150ms cubic-bezier(0.32,0.72,0,1)}
+.b1:hover{background:#2A2D33 !important}
+.b1:active,.b2:active{transform:scale(0.98)}
+.b2{transition:border-color .2s ease,background .2s ease}
+.b2:hover{border-color:#0A0B0D !important}
+.bw:hover{background:#E9EBEE !important}
+.ar{display:inline-block;transition:transform .2s ease}
+a:hover .ar{transform:translateX(3px)}
+.row{transition:background .2s ease}
+.row:hover{background:#F7F7F8}
+.tb{transition:color .2s ease,border-color .2s ease}
+.tb:hover{color:#0A0B0D !important}
+.tb:focus-visible{outline:2px solid #0A0B0D;outline-offset:2px}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.fade{animation:fade 360ms cubic-bezier(0.32,0.72,0,1) both}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.live{animation:pulse 2s ease-in-out infinite}
+@media (max-width:980px){.navlinks{display:none !important}.signin{display:none !important}.side{display:none !important}}
+@media (prefers-reduced-motion:reduce){.fade,.live{animation:none}}
+</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;color:#0A0B0D;background:#FFFFFF;-webkit-font-smoothing:antialiased;font-feature-settings:'ss01','cv11'">
+
+<header style="position:sticky;top:0;z-index:30;background:rgba(255,255,255,0.86);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid #EEEFF1">
+<nav aria-label="Primary" style="max-width:1200px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+<a href="Home-V3.dc.html" aria-label="Mission Control home" style="display:inline-flex;align-items:center"><img src="/_blob/5f444ae733218df8443956ffe7496978" alt="Mission Control" style="height:22px;width:auto;display:block"></a>
+<div class="navlinks" style="display:flex;gap:30px;font-size:14px;font-weight:500;color:#5B616B;align-items:center">
+<a class="nl" href="Platform-V3.dc.html">Platform</a>
+<a class="nl" href="HowWeWork-V3.dc.html">How we work</a>
+<a class="nl" href="Industries-V3.dc.html">Industries</a>
+<a class="nl" href="Security-V3.dc.html">Security</a>
+<a class="nl" href="Company-V3.dc.html">Company</a>
+</div>
+<div style="display:flex;align-items:center;gap:18px">
+<a class="nl signin" href="#" style="font-size:14px;font-weight:500;color:#5B616B">Sign in</a>
+<a href="Briefing-V3.dc.html" class="b1" style="display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:8px;background:#0A0B0D;color:#FFFFFF;font-size:14px;font-weight:500">Book a briefing</a>
+</div>
+</nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:88px 24px 0">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px 48px">
+<div style="flex:1 1 620px;min-width:0">
+<a href="#roadmap" style="display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500;color:#5B616B;border:1px solid #E7E8EB;border-radius:999px;padding:5px 12px 5px 6px"><span style="font-size:11px;font-weight:600;color:#0A0B0D;background:#F2F3F5;border-radius:999px;padding:3px 8px">New</span>Now onboarding services organisations <span class="ar" aria-hidden="true">→</span></a>
+<h1 class="d" style="margin:28px 0 0;font-weight:500;font-size:clamp(40px,4.8vw,62px);line-height:1.04;letter-spacing:-0.035em">See how work really moves through your organisation.</h1>
+</div>
+<div style="flex:0 1 420px;min-width:0">
+<p style="margin:0;font-size:17px;line-height:1.6;color:#5B616B">Mission Control maps how work flows between your people and teams, shows where it stalls, and tells you exactly what to automate, with the business case attached.</p>
+<div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:10px">
+<a href="#briefing" class="b1" style="display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 20px;border-radius:8px;background:#0A0B0D;color:#FFFFFF;font-size:15px;font-weight:500">Book a briefing <span class="ar" aria-hidden="true">→</span></a>
+<a href="#platform" class="b2" style="display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:8px;border:1px solid #DADCE0;color:#0A0B0D;font-size:15px;font-weight:500">See the platform</a>
+</div>
+</div>
+</div>
+
+<div style="margin-top:56px;position:relative;border-radius:16px;overflow:hidden;background:#0A0B0D;aspect-ratio:16/7.2">
+<video src="/_blob/a60c2c0bd7da2d874191da3a46feb609" poster="/_blob/4cee990f4f6e40fa8c1ed5e661a22ed9" autoplay="" muted="" loop="" playsinline="" aria-label="Overhead view of an office. Glowing green trails trace the routes work takes between teams." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,13,0.55) 0%,rgba(10,11,13,0) 46%)"></div>
+<div style="position:absolute;left:24px;bottom:24px;width:min(340px,calc(100% - 48px));background:rgba(14,16,19,0.72);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:18px;color:#FFFFFF">
+<div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#A7ADB6"><span style="display:inline-flex;align-items:center;gap:8px"><span class="live" style="width:7px;height:7px;border-radius:50%;background:#85EC68"></span>Live · Client onboarding</span><span>Illustrative</span></div>
+<div style="margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+<div><div class="d" style="font-size:24px;font-weight:500;letter-spacing:-0.02em">214</div><div style="font-size:12px;color:#A7ADB6">In flight</div></div>
+<div><div class="d" style="font-size:24px;font-weight:500;letter-spacing:-0.02em">3.1d</div><div style="font-size:12px;color:#A7ADB6">Median time</div></div>
+<div><div class="d" style="font-size:24px;font-weight:500;letter-spacing:-0.02em;color:#85EC68">15h</div><div style="font-size:12px;color:#A7ADB6">Automatable / wk</div></div>
+</div>
+<div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;font-size:13px"><span style="color:#D5D9DE">Slowest step: Compliance review</span><span style="color:#F2A16B">1.4d</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRINCIPLES STRIP -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:40px 24px 0">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));border-top:1px solid #EEEFF1;border-bottom:1px solid #EEEFF1">
+<div style="padding:22px 20px 22px 0"><div style="font-size:14px;font-weight:600">Deployed by our team</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#5B616B">Not a self-serve tool. We set it up and run it with you.</div></div>
+<div style="padding:22px 20px"><div style="font-size:14px;font-weight:600">Across your existing systems</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#5B616B">Email, CRM, practice and finance software.</div></div>
+<div style="padding:22px 20px"><div style="font-size:14px;font-weight:600">A business case for every automation</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#5B616B">Hours and dollars, before anything is built.</div></div>
+<div style="padding:22px 0 22px 20px"><div style="font-size:14px;font-weight:600">Movement, not content</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#5B616B">We map how work moves, not what it says.</div></div>
+</div>
+</div>
+</section>
+
+<!-- PLATFORM -->
+<section id="platform">
+<div style="max-width:1200px;margin:0 auto;padding:120px 24px 0">
+<div style="max-width:680px">
+<p style="margin:0;font-size:14px;font-weight:500;color:#157A36">The platform</p>
+<h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">One map of every hand-off in the business.</h2>
+<p style="margin:16px 0 0;font-size:17px;line-height:1.6;color:#5B616B">Workflows, teams and tools, drawn from how work actually moves. Open any step to see where time goes and what it is costing you.</p>
+</div>
+<div role="tablist" aria-label="Platform views" style="margin-top:40px;display:flex;gap:28px;border-bottom:1px solid #EEEFF1">
+<sc-for list="{{tabs}}" as="t"><button type="button" role="tab" class="tb" onClick="{{t.pick}}" aria-selected="{{t.on}}" style="{{t.style}}">{{t.label}}</button></sc-for>
+</div>
+
+<!-- App frame -->
+<div style="margin-top:28px;border:1px solid #E7E8EB;border-radius:14px;overflow:hidden;background:#FFFFFF;box-shadow:0 1px 2px rgba(10,11,13,0.04),0 40px 80px -40px rgba(10,11,13,0.22)">
+<div style="height:40px;display:flex;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid #EEEFF1;background:#FAFAFB">
+<span aria-hidden="true" style="display:flex;gap:6px"><span style="width:10px;height:10px;border-radius:50%;background:#E2E4E7"></span><span style="width:10px;height:10px;border-radius:50%;background:#E2E4E7"></span><span style="width:10px;height:10px;border-radius:50%;background:#E2E4E7"></span></span>
+<span style="font-size:12px;color:#8A9099">Mission Control · Illustrative data</span>
+</div>
+<div style="display:flex;min-height:520px">
+<aside class="side" aria-hidden="true" style="flex:none;width:200px;border-right:1px solid #EEEFF1;padding:16px 10px;font-size:13px;color:#5B616B;display:flex;flex-direction:column;gap:2px">
+<div style="display:flex;align-items:center;gap:8px;padding:6px 8px 14px"><img src="/_blob/0f7e7d87d6394b84028f82c7a752723a" alt="" style="width:18px;height:18px"><span style="font-weight:600;color:#0A0B0D">Northwind Group</span></div>
+<div style="padding:7px 8px;border-radius:6px">Overview</div>
+<div style="padding:7px 8px;border-radius:6px;{{navMap}}">Live map</div>
+<div style="padding:7px 8px;border-radius:6px">Workflows</div>
+<div style="padding:7px 8px;border-radius:6px;{{navDiag}}">Bottlenecks</div>
+<div style="padding:7px 8px;border-radius:6px">Teams</div>
+<div style="padding:7px 8px;border-radius:6px;{{navAuto}}">Automations</div>
+<div style="padding:7px 8px;border-radius:6px">Reports</div>
+</aside>
+<div style="flex:1;min-width:0;display:flex;flex-wrap:wrap">
+<div style="flex:1.4 1 420px;min-width:0;padding:18px;border-right:1px solid #EEEFF1">
+<div style="display:flex;justify-content:space-between;align-items:center;font-size:13px"><span style="font-weight:600">Client onboarding</span><span style="color:#8A9099">Last 30 days · 1,284 cases</span></div>
+<svg viewBox="0 0 600 400" width="100%" role="img" aria-label="Map of the client onboarding workflow. Most work flows from Intake to Delivery; a detour through Compliance review is the slowest step." style="margin-top:10px;display:block">
+<defs><pattern id="g3" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#ECEDEF"></circle></pattern></defs>
+<rect width="600" height="400" fill="url(#g3)"></rect>
+<g fill="none" stroke-linecap="round">
+<path d="M80 90 C150 60 200 60 250 90" stroke="#0A0B0D" stroke-width="{{w1}}"></path>
+<path d="M250 90 C320 120 360 190 420 200" stroke="#0A0B0D" stroke-width="{{w1}}"></path>
+<path d="M420 200 C470 210 500 280 530 320" stroke="#0A0B0D" stroke-width="{{w1}}"></path>
+<path d="M250 90 C220 170 200 250 170 300" stroke="{{slowStroke}}" stroke-width="{{w2}}"></path>
+<path d="M170 300 C260 320 360 260 420 200" stroke="{{slowStroke}}" stroke-width="{{w2}}"></path>
+<path d="M80 90 C70 180 100 260 170 300" stroke="#D4D7DB" stroke-width="1.5" stroke-dasharray="3 5"></path>
+</g>
+<g font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">
+<rect x="34" y="74" width="92" height="32" rx="6" fill="#FFFFFF" stroke="#D4D7DB"></rect><text x="80" y="94" fill="#0A0B0D">Intake</text>
+<rect x="196" y="74" width="108" height="32" rx="6" fill="#FFFFFF" stroke="#D4D7DB"></rect><text x="250" y="94" fill="#0A0B0D">Engagement</text>
+<rect x="364" y="184" width="112" height="32" rx="6" fill="#0A0B0D"></rect><text x="420" y="204" fill="#FFFFFF">Set-up</text>
+<rect x="478" y="304" width="104" height="32" rx="6" fill="#FFFFFF" stroke="#D4D7DB"></rect><text x="530" y="324" fill="#0A0B0D">Delivery</text>
+<rect x="96" y="284" width="148" height="32" rx="6" fill="{{slowFill}}" stroke="{{slowStroke}}"></rect><text x="170" y="304" fill="{{slowText}}">Compliance review</text>
+</g>
+<g font-family="Inter, sans-serif" font-size="11" fill="#8A9099"><text x="300" y="130">71% of cases</text><text x="122" y="214">29% of cases</text></g>
+</svg>
+</div>
+<div class="fade" style="flex:1 1 300px;min-width:0;padding:18px;background:#FCFCFD">
+<sc-if value="{{tMap}}" hint-placeholder-val="{{true}}">
+<div style="font-size:12px;color:#8A9099">Workflow summary</div>
+<div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">Median end to end</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">3.1 days</div></div>
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">Hand-offs per case</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">7.4</div></div>
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">On the fastest route</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">71%</div></div>
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">Teams involved</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">5</div></div>
+</div>
+<div style="margin-top:16px;font-size:12px;color:#8A9099">Steps</div>
+<div style="margin-top:8px;font-size:13px;display:grid">
+<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #EEEFF1"><span>Intake</span><span style="color:#5B616B">0.2d</span></div>
+<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #EEEFF1"><span>Engagement</span><span style="color:#5B616B">0.6d</span></div>
+<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #EEEFF1"><span>Compliance review</span><span style="color:#C2510C;font-weight:600">1.4d</span></div>
+<div style="display:flex;justify-content:space-between;padding:9px 0"><span>Set-up</span><span style="color:#5B616B">0.5d</span></div>
+</div>
+</sc-if>
+<sc-if value="{{tDiag}}" hint-placeholder-val="{{false}}">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:12px;color:#8A9099">Bottleneck</span><span style="font-size:11px;font-weight:600;color:#C2510C;background:#FFF3EB;border-radius:4px;padding:3px 6px">High impact</span></div>
+<div class="d" style="margin-top:8px;font-size:20px;font-weight:500">Compliance review</div>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.55;color:#5B616B">29% of cases detour here. They wait 1.4 days on average, mostly for one approver.</p>
+<div style="margin-top:14px;font-size:12px;color:#8A9099">Recent cases</div>
+<div style="margin-top:6px;font-size:13px;display:grid">
+<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #EEEFF1"><span>#4821 · arrived Tue 9:12</span><span style="color:#C2510C">3d 2h</span></div>
+<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #EEEFF1"><span>#4833 · arrived Tue 14:30</span><span style="color:#C2510C">2d 6h</span></div>
+<div style="display:flex;justify-content:space-between;padding:9px 0"><span>#4840 · arrived Wed 10:05</span><span style="color:#5B616B">0d 9h</span></div>
+</div>
+<div style="margin-top:14px;border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF;font-size:13px;line-height:1.5"><span style="font-weight:600">Pattern:</span> waits spike when the approver is out. A second approver would remove most of the delay.</div>
+</sc-if>
+<sc-if value="{{tAuto}}" hint-placeholder-val="{{false}}">
+<div style="font-size:12px;color:#8A9099">Automation opportunity</div>
+<div class="d" style="margin-top:8px;font-size:20px;font-weight:500">Chasing missing documents</div>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.55;color:#5B616B">Staff send reminder emails and re-check the file before review.</p>
+<div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">Time back</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">15 h/wk</div></div>
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">Annual value</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">$43,200</div></div>
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">Cycle time</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">−0.8d</div></div>
+<div style="border:1px solid #EEEFF1;border-radius:10px;padding:12px;background:#FFFFFF"><div style="font-size:12px;color:#8A9099">Confidence</div><div class="d" style="margin-top:4px;font-size:22px;font-weight:500">High</div></div>
+</div>
+<div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;border-radius:10px;padding:12px;background:#0A0B0D;color:#FFFFFF;font-size:13px"><span>Approve for build</span><span style="display:inline-flex;align-items:center;gap:6px;font-weight:600"><span style="width:7px;height:7px;border-radius:50%;background:#85EC68"></span>Ready</span></div>
+<p style="margin:10px 0 0;font-size:11px;color:#8A9099">Annual value assumes 48 weeks at $60 an hour.</p>
+</sc-if>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHY: stat -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0;display:flex;flex-wrap:wrap;gap:40px 80px">
+<div style="flex:1 1 380px;min-width:0">
+<p style="margin:0;font-size:14px;font-weight:500;color:#157A36">Why it matters</p>
+<h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">The org chart shows who reports to whom. It doesn't show how work gets done.</h2>
+</div>
+<div style="flex:1 1 440px;min-width:0">
+<div style="display:flex;align-items:baseline;gap:20px;padding-bottom:28px;border-bottom:1px solid #EEEFF1"><span class="d" style="font-size:64px;font-weight:500;letter-spacing:-0.04em;line-height:1">3 : 1</span><span style="font-size:15px;line-height:1.5;color:#5B616B">Hours knowledge workers spend on repetitive maintenance work for every hour of strategic work.<br><span style="font-size:12px;color:#8A9099">Source: Miro, Momentum at Work report, 2025</span></span></div>
+<div style="display:grid">
+<div style="padding:20px 0;border-bottom:1px solid #EEEFF1"><div style="font-weight:600;font-size:16px">Hand-offs are invisible</div><p style="margin:4px 0 0;font-size:15px;line-height:1.55;color:#5B616B">Work moves between people, inboxes and systems all day. Nobody sees the whole route.</p></div>
+<div style="padding:20px 0;border-bottom:1px solid #EEEFF1"><div style="font-weight:600;font-size:16px">Delays hide in the gaps</div><p style="margin:4px 0 0;font-size:15px;line-height:1.55;color:#5B616B">A file waits two days for one approver. It shows up as a missed deadline, not a cause.</p></div>
+<div style="padding:20px 0"><div style="font-weight:600;font-size:16px">Automation budgets are a guess</div><p style="margin:4px 0 0;font-size:15px;line-height:1.55;color:#5B616B">Money gets spent on what is loudest, not on what returns the most time.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CAPABILITIES -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0">
+<div style="max-width:680px">
+<p style="margin:0;font-size:14px;font-weight:500;color:#157A36">What you get</p>
+<h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">Four answers you have never had before.</h2>
+</div>
+<div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));border:1px solid #EEEFF1;border-radius:14px;overflow:hidden">
+<div style="padding:28px;border-right:1px solid #EEEFF1"><div style="font-size:13px;color:#8A9099">01</div><h3 class="d" style="margin:28px 0 0;font-size:20px;font-weight:500;letter-spacing:-0.015em">Where work slows down</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#5B616B">Every step ranked by how long work waits there.</p></div>
+<div style="padding:28px;border-right:1px solid #EEEFF1"><div style="font-size:13px;color:#8A9099">02</div><h3 class="d" style="margin:28px 0 0;font-size:20px;font-weight:500;letter-spacing:-0.015em">The moments it happened</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#5B616B">The real cases behind each delay, not just an average.</p></div>
+<div style="padding:28px;border-right:1px solid #EEEFF1"><div style="font-size:13px;color:#8A9099">03</div><h3 class="d" style="margin:28px 0 0;font-size:20px;font-weight:500;letter-spacing:-0.015em">What is working well</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#5B616B">The fastest routes and teams, so good practice spreads.</p></div>
+<div style="padding:28px;background:#0A0B0D;color:#FFFFFF"><div style="font-size:13px;color:#85EC68">04</div><h3 class="d" style="margin:28px 0 0;font-size:20px;font-weight:500;letter-spacing:-0.015em">What to automate, and what it is worth</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#B8BDC4">Every opportunity sized in hours and dollars.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ENGAGEMENT with whiteboard video -->
+<section id="engagement">
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0;display:flex;flex-wrap:wrap;gap:48px 72px;align-items:center">
+<div style="flex:1.1 1 480px;min-width:0;position:relative;border-radius:16px;overflow:hidden;background:#0A0B0D;aspect-ratio:4/3.4">
+<video src="/_blob/7d530c71ddd6c65481543937e9c81a26" poster="/_blob/b4f5dcc33ea1ea6cbc0fd817b8451ab5" autoplay="" muted="" loop="" playsinline="" aria-label="A team maps a workflow on a whiteboard." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+</div>
+<div style="flex:1 1 400px;min-width:0">
+<p style="margin:0;font-size:14px;font-weight:500;color:#157A36">How we work</p>
+<h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">A platform, and the team to act on it.</h2>
+<p style="margin:16px 0 0;font-size:17px;line-height:1.6;color:#5B616B">Mission Control is not self-serve. Our team deploys it, reads the map with you, and builds the automations.</p>
+<ol style="margin:32px 0 0;padding:0;list-style:none;border-top:1px solid #EEEFF1">
+<li style="display:flex;gap:20px;padding:18px 0;border-bottom:1px solid #EEEFF1"><span style="flex:none;width:28px;font-size:13px;color:#8A9099;padding-top:2px">01</span><div><div style="font-weight:600">Deploy</div><div style="margin-top:2px;font-size:15px;color:#5B616B">We install it and connect your systems. Staff are briefed openly.</div></div></li>
+<li style="display:flex;gap:20px;padding:18px 0;border-bottom:1px solid #EEEFF1"><span style="flex:none;width:28px;font-size:13px;color:#8A9099;padding-top:2px">02</span><div><div style="font-weight:600">Map</div><div style="margin-top:2px;font-size:15px;color:#5B616B">Your live map fills in as work moves.</div></div></li>
+<li style="display:flex;gap:20px;padding:18px 0;border-bottom:1px solid #EEEFF1"><span style="flex:none;width:28px;font-size:13px;color:#8A9099;padding-top:2px">03</span><div><div style="font-weight:600">Diagnose</div><div style="margin-top:2px;font-size:15px;color:#5B616B">Regular reviews on what is fast, what is slow and why.</div></div></li>
+<li style="display:flex;gap:20px;padding:18px 0;border-bottom:1px solid #EEEFF1"><span style="flex:none;width:28px;font-size:13px;color:#8A9099;padding-top:2px">04</span><div><div style="font-weight:600">Automate</div><div style="margin-top:2px;font-size:15px;color:#5B616B">You approve the business case. We build, test and measure.</div></div></li>
+</ol>
+</div>
+</div>
+</section>
+
+<!-- BUSINESS CASE TABLE -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+<div style="max-width:620px"><p style="margin:0;font-size:14px;font-weight:500;color:#157A36">The business case</p><h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">Every automation is ranked by what it returns.</h2></div>
+<p style="margin:0;max-width:340px;font-size:15px;line-height:1.55;color:#5B616B">You decide what gets built, with the numbers in front of you.</p>
+</div>
+<div style="margin-top:40px;border:1px solid #EEEFF1;border-radius:14px;overflow:hidden">
+<div style="overflow-x:auto"><table style="width:100%;min-width:720px;border-collapse:collapse;font-size:14px">
+<thead><tr style="text-align:left;background:#FAFAFB;color:#8A9099;font-size:12px"><th style="padding:14px 20px;font-weight:500">Opportunity</th><th style="padding:14px 20px;font-weight:500">Team</th><th style="padding:14px 20px;font-weight:500;text-align:right">Hours a week</th><th style="padding:14px 20px;font-weight:500;text-align:right">Annual value</th><th style="padding:14px 20px;font-weight:500">Status</th></tr></thead>
+<tbody><sc-for list="{{autos}}" as="a"><tr class="row" style="border-top:1px solid #EEEFF1"><td style="padding:16px 20px;font-weight:500">{{a.task}}</td><td style="padding:16px 20px;color:#5B616B">{{a.team}}</td><td style="padding:16px 20px;text-align:right;font-variant-numeric:tabular-nums">{{a.hrs}}</td><td style="padding:16px 20px;text-align:right;font-variant-numeric:tabular-nums;font-weight:600">{{a.val}}</td><td style="padding:16px 20px"><span style="{{a.chip}}"><span style="{{a.dot}}"></span>{{a.status}}</span></td></tr></sc-for></tbody>
+</table></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:14px 20px;border-top:1px solid #EEEFF1;background:#FAFAFB;font-size:12px;color:#8A9099"><span>Illustrative. Annual value assumes 48 weeks at $60 an hour.</span><span style="color:#0A0B0D;font-weight:600">Total: 53 hours a week · $152,640 a year</span></div>
+</div>
+</div>
+</section>
+
+<!-- WHO: full-bleed video -->
+<section style="padding:128px 24px 0">
+<div style="max-width:1200px;margin:0 auto;position:relative;border-radius:16px;overflow:hidden;background:#0A0B0D;min-height:520px">
+<video src="/_blob/2adfa15d353451be6038078795e3103f" poster="/_blob/22525d641ae94f0fc2df366f127f4188" autoplay="" muted="" loop="" playsinline="" aria-label="An operations leader reviews her screen in a modern office." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,13,0) 30%,rgba(10,11,13,0.82) 70%)"></div>
+<div style="position:relative;margin-left:auto;max-width:460px;padding:56px 48px;color:#FFFFFF">
+<p style="margin:0;font-size:14px;font-weight:500;color:#85EC68">Who it is for</p>
+<h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(28px,2.8vw,38px);line-height:1.12;letter-spacing:-0.025em">For the people accountable for how the business runs.</h2>
+<ul style="margin:28px 0 0;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,0.14);font-size:15px">
+<li style="padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.14)">Chief operating officers</li>
+<li style="padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.14)">Managing partners and directors</li>
+<li style="padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.14)">Heads of operations and transformation</li>
+<li style="padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.14)">Founders scaling past 50 people</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- INDUSTRIES -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0;display:flex;flex-wrap:wrap;gap:40px 80px">
+<div style="flex:1 1 340px;min-width:0">
+<p style="margin:0;font-size:14px;font-weight:500;color:#157A36">Industries</p>
+<h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">Built for organisations where the product is the work.</h2>
+<a href="Industries-V3.dc.html" style="margin-top:24px;display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:500">Explore industries <span class="ar" aria-hidden="true">→</span></a>
+</div>
+<div style="flex:1.4 1 520px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));column-gap:32px;border-top:1px solid #EEEFF1">
+<sc-for list="{{industries}}" as="i"><a href="Industries-V3.dc.html" class="row" style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 4px;border-bottom:1px solid #EEEFF1;font-size:15px"><span><span style="display:block;font-weight:500">{{i.name}}</span><span style="display:block;margin-top:2px;font-size:13px;color:#8A9099">{{i.flow}}</span></span><span class="ar" aria-hidden="true" style="color:#8A9099">→</span></a></sc-for>
+</div>
+</div>
+</section>
+
+<!-- ROADMAP: factory video -->
+<section id="roadmap">
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0">
+<div style="position:relative;border-radius:16px;overflow:hidden;background:#0A0B0D;aspect-ratio:16/7">
+<video src="/_blob/36d1c3a4445feeeff6e1c607ba4462d3" poster="/_blob/7c381692a494be53b7a0c56a74d7aecf" autoplay="" muted="" loop="" playsinline="" aria-label="A technician checks a tablet beside a robot arm on a factory line." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,11,13,0.85) 0%,rgba(10,11,13,0) 60%)"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:40px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;color:#FFFFFF">
+<div style="max-width:560px"><span style="font-size:12px;font-weight:600;letter-spacing:0.04em;color:#0A0B0D;background:#FFFFFF;border-radius:4px;padding:4px 8px">ON THE ROADMAP</span><h2 class="d" style="margin:16px 0 0;font-weight:500;font-size:clamp(28px,3vw,40px);line-height:1.1;letter-spacing:-0.025em">Next: work that moves through the physical world.</h2><p style="margin:12px 0 0;font-size:16px;line-height:1.55;color:#C9CED4">Manufacturing, warehousing, logistics and robotics. We are building it now with early partners.</p></div>
+<a href="Briefing-V3.dc.html" class="bw" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:8px;background:#FFFFFF;color:#0A0B0D;font-size:14px;font-weight:500">Join early access <span class="ar" aria-hidden="true">→</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECURITY -->
+<section id="security">
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0">
+<div style="max-width:680px"><p style="margin:0;font-size:14px;font-weight:500;color:#157A36">Security and privacy</p><h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">Designed to pass your security review.</h2></div>
+<div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:0;border-top:1px solid #EEEFF1">
+<div style="padding:24px 24px 0 0"><div style="font-weight:600">Movement, not content</div><p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#5B616B">We record when work moves and where it goes, not what emails or documents say.</p></div>
+<div style="padding:24px 24px 0 0"><div style="font-weight:600">Open with your people</div><p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#5B616B">We help you roll out with clear staff notice. It measures work, not individuals.</p></div>
+<div style="padding:24px 24px 0 0"><div style="font-weight:600">Scope you control</div><p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#5B616B">Choose which teams and systems are in. Change it at any time.</p></div>
+<div style="padding:24px 0 0 0"><div style="font-weight:600">Documentation on request</div><p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#5B616B">Architecture and data handling details for your IT and legal teams.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ENGAGEMENT MODEL -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:128px 24px 0">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+<div style="max-width:620px"><p style="margin:0;font-size:14px;font-weight:500;color:#157A36">Engagement model</p><h2 class="d" style="margin:14px 0 0;font-weight:500;font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-0.03em">Scoped to your organisation. Quoted upfront.</h2></div>
+<a href="Briefing-V3.dc.html" style="display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:500">Discuss your scope <span class="ar" aria-hidden="true">→</span></a>
+</div>
+<div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));border:1px solid #EEEFF1;border-radius:14px;overflow:hidden">
+<div style="padding:32px;border-right:1px solid #EEEFF1"><div style="font-size:13px;color:#8A9099">One-off</div><h3 class="d" style="margin:10px 0 0;font-size:24px;font-weight:500;letter-spacing:-0.02em">Implementation</h3><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#5B616B">Deployment, system connections, staff briefing and your first diagnostic review.</p></div>
+<div style="padding:32px;border-right:1px solid #EEEFF1"><div style="font-size:13px;color:#8A9099">Ongoing</div><h3 class="d" style="margin:10px 0 0;font-size:24px;font-weight:500;letter-spacing:-0.02em">Platform</h3><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#5B616B">The live map, reporting, regular reviews and a named lead on our team.</p></div>
+<div style="padding:32px"><div style="font-size:13px;color:#8A9099">Per automation</div><h3 class="d" style="margin:10px 0 0;font-size:24px;font-weight:500;letter-spacing:-0.02em">Automations</h3><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#5B616B">Scoped and priced individually, once the business case is approved.</p></div>
+</div>
+</div>
+</section>
+
+<!-- CTA: call video -->
+<section id="briefing" style="padding:128px 24px 96px">
+<div style="max-width:1200px;margin:0 auto;position:relative;border-radius:16px;overflow:hidden;background:#0A0B0D;min-height:460px;display:flex;align-items:center">
+<video src="/_blob/452f36bd032df4a4e252718e08a0b13f" poster="/_blob/3bb593c211c6ef064d73709b54adcb6a" autoplay="" muted="" loop="" playsinline="" aria-label="A business leader smiles on a video call." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,13,0) 25%,rgba(10,11,13,0.86) 62%)"></div>
+<div style="position:relative;margin-left:auto;max-width:480px;padding:56px 48px;color:#FFFFFF">
+<h2 class="d" style="margin:0;font-weight:500;font-size:clamp(30px,3.2vw,44px);line-height:1.06;letter-spacing:-0.03em">See your organisation from above.</h2>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#C9CED4">A 30-minute briefing with our team. We walk through a live map and tell you plainly whether Mission Control is a fit.</p>
+<div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px">
+<a href="Briefing-V3.dc.html" class="bw" style="display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 20px;border-radius:8px;background:#FFFFFF;color:#0A0B0D;font-size:15px;font-weight:500">Book a briefing <span class="ar" aria-hidden="true">→</span></a>
+<a href="mailto:hello@missioncntrl.io" style="display:inline-flex;align-items:center;min-height:46px;padding:0 4px;color:#FFFFFF;font-size:15px;font-weight:500;text-decoration:underline;text-underline-offset:4px">hello@missioncntrl.io</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer id="company" style="border-top:1px solid #EEEFF1">
+<div style="max-width:1200px;margin:0 auto;padding:56px 24px 32px">
+<div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
+<div style="flex:1 1 260px;max-width:320px"><img src="/_blob/5f444ae733218df8443956ffe7496978" alt="Mission Control" style="height:22px;width:auto;display:block"><p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:#5B616B">Operational intelligence for services organisations.</p></div>
+<div style="flex:2 1 480px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(140px,100%),1fr));gap:28px;font-size:14px">
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Platform</span><a class="nl" href="#platform" style="color:#5B616B">Live map</a><a class="nl" href="#platform" style="color:#5B616B">Bottlenecks</a><a class="nl" href="#platform" style="color:#5B616B">Automations</a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Company</span><a class="nl" href="HowWeWork-V3.dc.html" style="color:#5B616B">How we work</a><a class="nl" href="Security-V3.dc.html" style="color:#5B616B">Security</a><a class="nl" href="Company-V3.dc.html" style="color:#5B616B">About</a><a class="nl" href="Industries-V3.dc.html" style="color:#5B616B">Industries</a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Contact</span><a class="nl" href="Briefing-V3.dc.html" style="color:#5B616B">Book a briefing</a><a class="nl" href="mailto:hello@missioncntrl.io" style="color:#5B616B">hello@missioncntrl.io</a></div>
+</div>
+</div>
+<div style="margin-top:48px;padding-top:20px;border-top:1px solid #EEEFF1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:#8A9099"><span>© 2026 Mission Control</span><span style="display:flex;gap:18px"><a class="nl" href="#">Privacy</a><a class="nl" href="#">Terms</a></span></div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":8200}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { tab: 0 }; }
+  renderVals() {
+    var self = this;
+    var tab = this.state.tab;
+    var labels = ['Live map', 'Bottlenecks', 'Automations'];
+    var tabs = labels.map(function (l, i) {
+      var on = i === tab;
+      return { label: l, on: on ? 'true' : 'false', pick: function () { self.setState({ tab: i }); },
+        style: 'background:transparent;border:0;border-bottom:2px solid ' + (on ? '#0A0B0D' : 'transparent') + ';margin-bottom:-1px;padding:12px 0;min-height:44px;font:inherit;font-size:15px;font-weight:500;cursor:pointer;color:' + (on ? '#0A0B0D' : '#8A9099') };
+    });
+    var chip = 'display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;border:1px solid #E7E8EB;border-radius:999px;padding:3px 9px;color:#0A0B0D';
+    var autos = [
+      ['Copying enquiries into the CRM', 'Sales', '22', '$63,360', 'Approved', '#85EC68'],
+      ['Chasing missing documents', 'Onboarding', '15', '$43,200', 'Ready for review', '#0A0B0D'],
+      ['Weekly client status updates', 'Delivery', '9', '$25,920', 'Sizing', '#C4C8CE'],
+      ['Matching payments to invoices', 'Finance', '7', '$20,160', 'Sizing', '#C4C8CE']
+    ].map(function (a) { return { task: a[0], team: a[1], hrs: a[2], val: a[3], status: a[4], chip: chip, dot: 'width:6px;height:6px;border-radius:50%;background:' + a[5] }; });
+    var slow = tab === 1;
+    return {
+      tabs: tabs,
+      tMap: tab === 0, tDiag: tab === 1, tAuto: tab === 2,
+      navMap: tab === 0 ? 'background:#F2F3F5;color:#0A0B0D;font-weight:500' : '',
+      navDiag: tab === 1 ? 'background:#F2F3F5;color:#0A0B0D;font-weight:500' : '',
+      navAuto: tab === 2 ? 'background:#F2F3F5;color:#0A0B0D;font-weight:500' : '',
+      w1: tab === 1 ? '2' : '3', w2: slow ? '4' : '2.5',
+      slowStroke: slow ? '#E8590C' : '#F2A16B', slowFill: slow ? '#FFF3EB' : '#FFFFFF', slowText: slow ? '#B4450A' : '#0A0B0D',
+      autos: autos,
+      industries: [
+        { name: 'Accounting and advisory', flow: 'Onboarding, month-end, lodgement' },
+        { name: 'Legal', flow: 'Intake, matters, billing' },
+        { name: 'Insurance', flow: 'Claims, assessment, approvals' },
+        { name: 'Financial services and broking', flow: 'Applications, documents, settlement' },
+        { name: 'Property management', flow: 'Maintenance, approvals, leasing' },
+        { name: 'Recruitment and staffing', flow: 'Briefs, interviews, placements' },
+        { name: 'Agencies and consultancies', flow: 'Briefs, reviews, delivery, invoicing' },
+        { name: 'Healthcare administration', flow: 'Referrals, bookings, billing' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
