@@ -36,7 +36,9 @@ def between(s, a, b):
 os.makedirs(OUT + '/media', exist_ok=True)
 for bid, (path, name) in MEDIA.items():
     shutil.copyfile(path, f'{OUT}/media/{name}')
-shutil.copyfile('/home/claude/site/mc.js', f'{OUT}/mc.js')
+for f in ('mc.js','mc-motion.js','mc-motion.css'):
+    shutil.copyfile(f'/home/claude/site/{f}', f'{OUT}/{f}')
+LOADER = open('/home/claude/site/loader.html').read()
 
 def rewrite(s):
     for bid, (_, name) in MEDIA.items():
@@ -77,9 +79,13 @@ for src, (out, url, desc) in PAGES.items():
 <meta property="og:image" content="/media/overhead.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="/media/mark.svg">
+<meta name="theme-color" content="#FFFFFF">
+<script>try{{if(!sessionStorage.getItem("mv-seen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches){{document.documentElement.classList.add("mv-loading");sessionStorage.setItem("mv-seen","1")}}}}catch(e){{}}</script>
 {helmet}
+<link rel="stylesheet" href="/mc-motion.css">
 </head>
 <body>
+{LOADER}
 <template id="mc-root">{body}</template>
 <div id="mc-app"></div>
 <script src="/mc.js"></script>
@@ -87,6 +93,7 @@ for src, (out, url, desc) in PAGES.items():
 {script}
 MC.mount(Component);
 </script>
+<script src="/mc-motion.js"></script>
 </body>
 </html>
 """

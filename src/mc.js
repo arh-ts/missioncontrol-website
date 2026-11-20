@@ -69,16 +69,24 @@
 
   function morph(a, b, root) {
     if (a.nodeType === 1 && !root) {
+      var keep = (a.getAttribute('class') || '').split(/\s+/).filter(function (c) { return c.indexOf('mv-') === 0; });
       var aa = Array.prototype.slice.call(a.attributes);
-      for (var i = 0; i < aa.length; i++) if (!b.hasAttribute(aa[i].name)) a.removeAttribute(aa[i].name);
-      for (var j = 0; j < b.attributes.length; j++) {
-        var at = b.attributes[j];
-        if (a.getAttribute(at.name) !== at.value) a.setAttribute(at.name, at.value);
+      for (var i = 0; i < aa.length; i++) {
+        var nm = aa[i].name;
+        if (nm.indexOf('data-mv') === 0 || nm === 'aria-label' && a.hasAttribute('data-mv-split')) continue;
+        if (!b.hasAttribute(nm) && !(nm === 'class' && keep.length)) a.removeAttribute(nm);
       }
+      for (var j = 0; j < b.attributes.length; j++) {
+        var at = b.attributes[j], v = at.value;
+        if (at.name === 'class' && keep.length) v = (v + ' ' + keep.join(' ')).trim();
+        if (at.name === 'style' && a.hasAttribute('data-mv-ins')) continue;
+        if (a.getAttribute(at.name) !== v) a.setAttribute(at.name, v);
+      }
+      if (keep.length && !b.hasAttribute('class')) a.setAttribute('class', keep.join(' '));
       a.__mc = b.__mc;
-      if (a.localName === 'video') return;
+      if (a.localName === 'video' || a.hasAttribute('data-mv-split')) return;
     }
-    var ac = Array.prototype.slice.call(a.childNodes), bc = Array.prototype.slice.call(b.childNodes);
+    var ac = Array.prototype.slice.call(a.childNodes).filter(function (n) { return !(n.nodeType === 1 && n.hasAttribute('data-mv-ins')); }), bc = Array.prototype.slice.call(b.childNodes);
     for (var n = 0; n < bc.length; n++) {
       var x = ac[n], y = bc[n];
       if (!x) { a.appendChild(y); continue; }

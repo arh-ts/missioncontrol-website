@@ -1,0 +1,119 @@
+/* Mission Control motion and detail layer.
+   Timing table: press 150ms, swap 220ms, reveal 520ms, draw 1400ms. One curve for everything that arrives.
+   Motion answers a person, or happens once. Reduced motion turns all of it off. */
+:root{
+  --mv-ease:cubic-bezier(0.32,0.72,0,1);
+  --mv-ease-io:cubic-bezier(0.77,0,0.175,1);
+  --mv-press:150ms;
+  --mv-swap:220ms;
+  --mv-reveal:520ms;
+  --mv-lime:#85EC68;
+  --mv-ink:#0A0B0D;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+::selection{background:#85EC68;color:#0A0B0D}
+body{text-rendering:optimizeLegibility}
+
+/* 1. First-visit loader: the mark assembles, then the page settles in. Once per session. */
+#mv-loader{display:none}
+html.mv-loading #mv-loader{position:fixed;inset:0;z-index:100;background:#FFFFFF;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;transition:opacity 380ms var(--mv-ease),visibility 0s linear 380ms}
+html.mv-loading.mv-loaded #mv-loader{opacity:0;visibility:hidden}
+.mv-mark{overflow:visible}
+.mv-petal{fill:#26A44C;transform-box:fill-box;transform-origin:center;opacity:0;transform:scale(.4) rotate(-30deg);animation:mv-petal 560ms var(--mv-ease) forwards;animation-delay:calc(var(--i) * 90ms)}
+html.mv-loaded .mv-mark{transform:rotate(60deg) scale(.92);transition:transform 520ms var(--mv-ease)}
+@keyframes mv-petal{to{opacity:1;transform:none}}
+.mv-loadbar{width:120px;height:2px;border-radius:2px;background:#EEEFF1;overflow:hidden;position:relative}
+.mv-loadbar::after{content:"";position:absolute;inset:0;background:#0A0B0D;transform-origin:left;transform:scaleX(0);animation:mv-bar 900ms var(--mv-ease-io) forwards}
+@keyframes mv-bar{to{transform:scaleX(1)}}
+html.mv-loading #mc-app{opacity:0;animation:mv-failsafe 0s linear 3s forwards}
+html.mv-loading #mv-loader{animation:mv-gone 0s linear 3s forwards}
+@keyframes mv-failsafe{to{opacity:1}}
+@keyframes mv-gone{to{opacity:0;visibility:hidden}}
+html.mv-loading.mv-loaded #mc-app{opacity:1;transition:opacity 420ms var(--mv-ease) 80ms}
+
+/* 2. Hero: one orchestrated entrance. Headline rises line by line, then the media, then the live card. */
+.mv-hero-in .mv-h1-line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.mv-hero-in .mv-h1-line>span{display:block;transform:translateY(105%);animation:mv-rise 820ms var(--mv-ease) forwards;animation-delay:calc(120ms + var(--l) * 90ms)}
+.mv-hero-in .mv-hero-fade{opacity:0;transform:translateY(10px);animation:mv-fade 640ms var(--mv-ease) forwards;animation-delay:var(--d,420ms)}
+@keyframes mv-rise{to{transform:none}}
+@keyframes mv-fade{to{opacity:1;transform:none}}
+
+/* 3. Background pattern: a faint survey grid with routes, behind the hero only, fading out at the edges. */
+.mv-hero-bg{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.mv-hero-bg::before{content:"";position:absolute;inset:-1px;background-image:radial-gradient(circle,rgba(10,11,13,.13) 1px,transparent 1.3px);background-size:24px 24px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 30% 30%,#000 10%,transparent 72%);mask-image:radial-gradient(ellipse 70% 60% at 30% 30%,#000 10%,transparent 72%)}
+.mv-hero-bg svg{position:absolute;inset:0;width:100%;height:100%;-webkit-mask-image:radial-gradient(ellipse 75% 65% at 35% 30%,#000 15%,transparent 75%);mask-image:radial-gradient(ellipse 75% 65% at 35% 30%,#000 15%,transparent 75%)}
+.mv-route{fill:none;stroke:rgba(10,11,13,.16);stroke-width:1;stroke-dasharray:1400;stroke-dashoffset:1400;animation:mv-draw 2200ms var(--mv-ease-io) forwards;animation-delay:calc(300ms + var(--r) * 260ms)}
+.mv-route-live{stroke:#85EC68;stroke-width:1.5;opacity:.9}
+.mv-node{fill:#FFFFFF;stroke:rgba(10,11,13,.28);stroke-width:1;opacity:0;animation:mv-fade 400ms var(--mv-ease) forwards;animation-delay:calc(900ms + var(--r) * 260ms)}
+.mv-node-live{fill:#85EC68;stroke:none}
+@keyframes mv-draw{to{stroke-dashoffset:0}}
+.mv-traveller{fill:#26A44C;offset-rotate:0deg;animation:mv-travel 9s linear infinite;animation-delay:2.4s;opacity:0}
+@keyframes mv-travel{0%{offset-distance:0%;opacity:0}6%{opacity:1}94%{opacity:1}100%{offset-distance:100%;opacity:0}}
+section.mv-hero{position:relative}
+section.mv-hero>div{position:relative;z-index:1}
+
+/* 4. Waypoint eyebrows: each section label sits on a small map node. */
+.mv-waypoint{display:inline-flex;align-items:center;gap:10px}
+.mv-waypoint::before{content:"";width:9px;height:9px;border-radius:50%;background:#FFFFFF;box-shadow:0 0 0 1.5px #157A36,0 0 0 4px rgba(133,236,104,.28);flex:none}
+
+/* 5. Reveals: sections arrive once, pieces 80ms apart. Only below-the-fold content is ever hidden. */
+.mv-rv{opacity:0;transform:translateY(12px);transition:opacity var(--mv-reveal) var(--mv-ease),transform var(--mv-reveal) var(--mv-ease);transition-delay:calc(var(--s,0) * 80ms)}
+.mv-rv.mv-in{opacity:1;transform:none}
+
+/* 6. Buttons: confirm the press on the same frame; primary buttons catch the light on hover. */
+.b1,.b2,.bw{position:relative;overflow:hidden;transition:background-color var(--mv-press) ease,border-color var(--mv-press) ease,color var(--mv-press) ease,transform var(--mv-press) var(--mv-ease),box-shadow var(--mv-swap) var(--mv-ease) !important}
+.b1:active,.b2:active,.bw:active{transform:scale(.97) !important}
+.b1::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.18) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none}
+.b1:hover{box-shadow:0 8px 20px -10px rgba(10,11,13,.55),inset 0 1px 0 rgba(255,255,255,.08)}
+.b1:hover::after{transform:translateX(120%);transition:transform 700ms var(--mv-ease)}
+.b1 .ar,.bw .ar,a .ar{transition:transform var(--mv-swap) var(--mv-ease)}
+@media (hover:none){.b1:hover::after{transform:translateX(-120%)}a:hover .ar{transform:none}}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #0A0B0D;outline-offset:3px;border-radius:6px}
+
+/* 7. Nav: settles into a solid bar once you scroll; a lime line shows how far you are. */
+header.mv-nav{transition:box-shadow var(--mv-swap) var(--mv-ease),background-color var(--mv-swap) ease}
+header.mv-nav.mv-scrolled{box-shadow:0 1px 0 #EEEFF1,0 8px 24px -18px rgba(10,11,13,.35);background-color:rgba(255,255,255,.94) !important}
+header.mv-nav .nl{position:relative}
+header.mv-nav .navlinks .nl::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1.5px;background:#0A0B0D;transform:scaleX(0);transform-origin:left;transition:transform var(--mv-swap) var(--mv-ease)}
+header.mv-nav .navlinks .nl:hover::after,header.mv-nav .navlinks .nl[aria-current="page"]::after{transform:scaleX(1)}
+#mv-progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:60;background:#85EC68;transform-origin:left;transform:scaleX(0);pointer-events:none}
+
+/* 8. Media: film grain and a soft vignette on video frames; video fades in over its still once it plays. */
+.mv-media{isolation:isolate}
+.mv-media video{transition:opacity 700ms var(--mv-ease)}
+.mv-media video.mv-wait{opacity:0}
+.mv-media::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;border-radius:inherit;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.07;mix-blend-mode:overlay;box-shadow:inset 0 0 120px rgba(0,0,0,.28)}
+.mv-media>*:not(video){position:relative;z-index:2}
+.mv-media>div[aria-hidden="true"]{position:absolute}
+
+/* 9. Product frames: the slow route keeps moving, so the map reads as live. */
+.mv-flow{stroke-dasharray:6 7;animation:mv-dash 1.4s linear infinite}
+@keyframes mv-dash{to{stroke-dashoffset:-26}}
+.mv-frame{transition:box-shadow 400ms var(--mv-ease),transform 400ms var(--mv-ease)}
+
+/* 10. Live dots breathe. */
+.mv-live{animation:mv-pulse 2.2s var(--mv-ease) infinite}
+@keyframes mv-pulse{0%{box-shadow:0 0 0 0 rgba(133,236,104,.55)}70%{box-shadow:0 0 0 7px rgba(133,236,104,0)}100%{box-shadow:0 0 0 0 rgba(133,236,104,0)}}
+
+/* 11. Rows and tabs answer the pointer with colour, not movement. */
+.row,.tb,.fq{transition:background-color var(--mv-press) ease,color var(--mv-press) ease}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.mv-loading #mv-loader{display:none}
+  html.mv-loading #mc-app{opacity:1}
+  .mv-rv{opacity:1;transform:none;transition:none}
+  .mv-hero-in .mv-h1-line>span,.mv-hero-in .mv-hero-fade{animation:none;transform:none;opacity:1}
+  .mv-route{animation:none;stroke-dashoffset:0}.mv-node{animation:none;opacity:1}
+  .mv-traveller,.mv-flow,.mv-live,.b1::after{animation:none;display:none}
+  .mv-flow{display:inline}
+  #mv-progress{display:none}
+}
+
+/* 12. Product screens sit on a faint survey grid and settle from a slight tilt as they arrive. */
+.mv-grid{position:relative}
+.mv-grid::before{content:"";position:absolute;left:0;right:0;top:30%;bottom:-60px;pointer-events:none;z-index:0;background-image:radial-gradient(circle,rgba(10,11,13,.11) 1px,transparent 1.3px);background-size:24px 24px;-webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 55%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 55% at 50% 55%,#000 20%,transparent 75%)}
+.mv-grid>div{position:relative;z-index:1}
+.mv-tilt{transform:perspective(1600px) rotateX(9deg) scale(.965);transform-origin:50% 0;opacity:.6;transition:transform 1100ms var(--mv-ease),opacity 900ms var(--mv-ease)}
+.mv-tilt.mv-in{transform:none;opacity:1}
+@media (prefers-reduced-motion:reduce){.mv-tilt{transform:none;opacity:1;transition:none}}
