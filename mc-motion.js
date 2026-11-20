@@ -40,7 +40,7 @@
     var media = sec.querySelector('video, [style*="aspect-ratio"], [style*="border-radius:14px"]');
     fades.forEach(function (el, i) { el.classList.add('mv-hero-fade'); el.style.setProperty('--d', (360 + i * 70) + 'ms'); });
     if (media) { var box = media.closest('[style*="border-radius"]') || media; box.classList.add('mv-hero-fade'); box.style.setProperty('--d', '620ms'); }
-    if (!reduce) sec.classList.add('mv-hero-in');
+    if (!reduce) { var wait = doc.classList.contains('mv-loading') ? 950 : 0; setTimeout(function () { sec.classList.add('mv-hero-in'); }, wait); }
 
     var bg = document.createElement('div'); bg.className = 'mv-hero-bg'; bg.setAttribute('aria-hidden', 'true'); bg.setAttribute('data-mv-ins', '1');
     bg.innerHTML = '<svg viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice">' +
@@ -155,6 +155,8 @@
       var y = window.scrollY, h = document.documentElement.scrollHeight - window.innerHeight;
       bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, y / h) : 0) + ')';
       var header = app.querySelector('header'); if (header) header.classList.toggle('mv-scrolled', y > 8);
+      var vb = window.innerHeight;
+      app.querySelectorAll('.mv-rv:not(.mv-in), .mv-tilt:not(.mv-in)').forEach(function (el) { if (el.getBoundingClientRect().top < vb * 0.9) el.classList.add('mv-in'); });
     }
     window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
     update();

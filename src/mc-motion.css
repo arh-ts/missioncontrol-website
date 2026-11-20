@@ -32,7 +32,7 @@ html.mv-loading #mv-loader{animation:mv-gone 0s linear 3s forwards}
 html.mv-loading.mv-loaded #mc-app{opacity:1;transition:opacity 420ms var(--mv-ease) 80ms}
 
 /* 2. Hero: one orchestrated entrance. Headline rises line by line, then the media, then the live card. */
-.mv-hero-in .mv-h1-line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.mv-h1-line{display:block;overflow:hidden;padding-bottom:.16em;margin-bottom:-.16em}
 .mv-hero-in .mv-h1-line>span{display:block;transform:translateY(105%);animation:mv-rise 820ms var(--mv-ease) forwards;animation-delay:calc(120ms + var(--l) * 90ms)}
 .mv-hero-in .mv-hero-fade{opacity:0;transform:translateY(10px);animation:mv-fade 640ms var(--mv-ease) forwards;animation-delay:var(--d,420ms)}
 @keyframes mv-rise{to{transform:none}}
@@ -43,14 +43,14 @@ html.mv-loading.mv-loaded #mc-app{opacity:1;transition:opacity 420ms var(--mv-ea
 .mv-hero-bg::before{content:"";position:absolute;inset:-1px;background-image:radial-gradient(circle,rgba(10,11,13,.13) 1px,transparent 1.3px);background-size:24px 24px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 30% 30%,#000 10%,transparent 72%);mask-image:radial-gradient(ellipse 70% 60% at 30% 30%,#000 10%,transparent 72%)}
 .mv-hero-bg svg{position:absolute;inset:0;width:100%;height:100%;-webkit-mask-image:radial-gradient(ellipse 75% 65% at 35% 30%,#000 15%,transparent 75%);mask-image:radial-gradient(ellipse 75% 65% at 35% 30%,#000 15%,transparent 75%)}
 .mv-route{fill:none;stroke:rgba(10,11,13,.16);stroke-width:1;stroke-dasharray:1400;stroke-dashoffset:1400;animation:mv-draw 2200ms var(--mv-ease-io) forwards;animation-delay:calc(300ms + var(--r) * 260ms)}
-.mv-route-live{stroke:#85EC68;stroke-width:1.5;opacity:.9}
+.mv-route-live{stroke:#85EC68;stroke-width:1.25;opacity:.6}
 .mv-node{fill:#FFFFFF;stroke:rgba(10,11,13,.28);stroke-width:1;opacity:0;animation:mv-fade 400ms var(--mv-ease) forwards;animation-delay:calc(900ms + var(--r) * 260ms)}
 .mv-node-live{fill:#85EC68;stroke:none}
 @keyframes mv-draw{to{stroke-dashoffset:0}}
 .mv-traveller{fill:#26A44C;offset-rotate:0deg;animation:mv-travel 9s linear infinite;animation-delay:2.4s;opacity:0}
 @keyframes mv-travel{0%{offset-distance:0%;opacity:0}6%{opacity:1}94%{opacity:1}100%{offset-distance:100%;opacity:0}}
 section.mv-hero{position:relative}
-section.mv-hero>div{position:relative;z-index:1}
+section.mv-hero>div:not(.mv-hero-bg){position:relative;z-index:1}
 
 /* 4. Waypoint eyebrows: each section label sits on a small map node. */
 .mv-waypoint{display:inline-flex;align-items:center;gap:10px}
