@@ -71,7 +71,6 @@ for src, (out, url, desc) in PAGES.items():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="robots" content="noindex">
 <link rel="canonical" href="{canon}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
