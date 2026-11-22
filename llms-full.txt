@@ -1,5 +1,5 @@
 # Mission Control: full site text
-Generated 2026-11-22. Canonical site: https://missioncntrl.io
+Generated 2026-11-23. Canonical site: https://missioncntrl.io
 
 ## Mission Control | See how work really moves through your organisation
 URL: https://missioncntrl.io/
@@ -590,6 +590,383 @@ Per automation
 Automations
 Priced individually, after you approve the business case.
 How an engagement runs →
+
+## The month-end close is slow because work waits, not accountants
+URL: https://missioncntrl.io/news/month-end-close-waiting-not-working
+Published: 2026-11-23
+
+Key points
+APQC's open benchmark puts the median time to complete monthly consolidated statements at 6 calendar days. That figure counts elapsed time, including waiting.
+When finance teams are asked what slows the close, the most common answer is waiting: for data, for other departments, for systems. Few blame the speed of the accounting work itself.
+Most close data comes from vendor surveys with small or undisclosed samples. Treat the percentages as directional, but the pattern is consistent across a decade of them.
+AI and close software only shorten the close if they act on the critical path. Automating a step that was never the constraint changes little.
+Map the close as a dependency network, measure waiting against working at each step, find the critical path, then fix hand-offs before buying anything.
+Ask a controller why the close takes eight days and you rarely hear "because reconciliations take eight days of effort." You hear that payroll was late, a project manager had not approved the accrual, the bank feed broke, or the partner who signs off was travelling. The accountants were ready. The inputs were not.
+That distinction matters because most fixes on the market are aimed at the wrong problem. Close management software, reconciliation tools and now AI agents promise to make accounting work faster. In most services organisations the accounting work is not where the days go. They go in the gaps between steps.
+This applies to in-house finance teams and to accounting firms running monthly close or bookkeeping for clients.
+How long the close takes, and what the number hides
+The most widely used benchmark comes from APQC. Across 10,198 organisations, its median cycle time to complete monthly consolidated financial statements is 6.0 days . The definition is worth reading closely: calendar days, including weekends, from the first trial balance to agreed consolidated statements. For finance shared services centres, APQC's median to complete the monthly close is 8.0 days across 3,123 organisations.
+These are elapsed times. They include every hour a reconciliation sat untouched, waiting for a statement or a sign-off.
+Vendor surveys tell a similar story with more spread. A 2025 benchmark from Ledge, a finance software company, surveyed 100 finance professionals and found half of teams take six or more business days , with only 18 per cent closing in three days or less. A May 2026 report from LiveFlow, another vendor, found 16 per cent of respondents take more than 10 days . LiveFlow did not disclose its sample size. Both firms sell close tooling, so read the numbers as indicative, not definitive.
+Where the days actually go
+The more useful question is why. The answers line up.
+Late inputs from other teams. In the LiveFlow report, about 80 per cent blamed close delays on waiting for data from other systems or departments . Ledge found 56 per cent cited dependence on other departments and regions , the top cause, and quoted one manager: "if even one source is delayed, it pushes back the entire close."
+This is not new. In 2017 the Journal of Accountancy reported an Adra survey in which 54 per cent named coordinating and getting information from other departments as a challenge. A FloQast survey of 259 close owners in the same article found 71 per cent relied on undocumented "tribal knowledge."
+Reconciliation rework. Ledge respondents named reconciling bank, card and processor accounts as the most frequent time sink. LiveFlow found more than half cite reconciling across multiple platforms as a barrier.
+Batching at period end. EY's record-to-report guidance describes work that is heavily manual and concentrated at period end , with critical inputs often not complete and accurate until late in the period. It also warns that treating the close as separate tasks hides "interdependencies, bottlenecks and inefficiencies."
+Approval queues. Ledge ranked departmental submissions and approvals fifth among time-consuming tasks.
+None of these is about how fast an accountant works. They are about when work can start and how long finished work waits.
+For accounting firms running client close
+The pattern is sharper when the inputs belong to a client. In a 2026 report commissioned by HubSync, a vendor to CPA firms, half of respondents said chasing documents was the operational process consuming the most staff time . Financial Cents' survey of 816 accounting, bookkeeping and tax firm owners found getting documents from clients was still the biggest workflow issue . For a bookkeeping practice, the client is the upstream department that is always late.
+Why the close behaves like a queue
+A close is a network of dependent steps. Accruals depend on approved timesheets. Revenue recognition depends on billing. Intercompany depends on both sides posting. Review depends on preparation. The close finishes when the longest chain of dependent steps finishes. That chain is the critical path.
+Two consequences follow. First, speeding up a step that is not on the critical path does not shorten the close at all. Second, on most critical paths the elapsed time is dominated by waiting. We covered the general mechanics in our piece on flow efficiency : work spends most of its life queued, and queues grow sharply when the people they wait on are near full capacity. Period end is exactly when everyone is near full capacity.
+Why buying software or AI first rarely fixes it
+Finance teams are investing. Gartner's 2025 survey of 183 finance leaders found 59 per cent of finance functions use AI , but 91 per cent reported low or moderate impact so far. In September 2026 Gartner reported, from a survey of 160 finance leaders, that low AI literacy is now the most significant barrier and urged more deliberate portfolio management of AI spend.
+LiveFlow's respondents said AI is mostly applied to analysis and reporting, leaving the manual core of the close largely unchanged. That fits the queue view. An AI tool that drafts variance commentary in minutes saves real effort, but if commentary was waiting two days for the final trial balance, the close still ends on the same day. Automation helps most when it removes a wait on the critical path. We have written about why automation programs stall when this sequencing is skipped.
+The talent squeeze makes waiting more expensive
+The obvious response to a slow close, adding people, is getting harder. The AICPA's 2025 Trends report found accounting bachelor's and master's degrees fell 6.6 per cent to 55,152 in 2023 to 2024, though enrolment rose 12.4 per cent in spring 2025. The US Bureau of Labor Statistics projects about 115,300 openings a year for accountants and auditors from 2025 to 2035. In Australia, a CA ANZ survey of 159 members found only 49 per cent of general accountant vacancies were filled , taking 79 days on average.
+When skilled hours are scarce, an hour lost waiting is more costly. Fixing flow is the cheapest capacity a finance team can find.
+A framework: map the close as a dependency network
+List every close step and its inputs. For each step, name who supplies what, and from which system. Include external inputs: payroll provider, bank, client, project leads.
+Draw the dependencies. Which steps cannot start until another finishes? This is your network.
+Measure waiting and working per step. For three recent closes, record when each step could have started, when it actually started, the hands-on hours, and when it finished.
+Find the critical path. Trace the longest chain of dependent elapsed time from period end to sign-off. Only steps on this path set your close date.
+Rank waits on the critical path. The largest waits, not the largest tasks, are where to start.
+Illustrative example. A 300-person consultancy closes on working day 7. Its critical path runs: timesheet approval (2 days elapsed, 1 hour of work), unbilled revenue accrual (1.5 days, 4 hours), management review (2 days, 3 hours), partner sign-off (1.5 days, 1 hour). Of about 7 working days on the path, roughly 9 hours are hands-on work. Flow efficiency on the critical path is under 20 per cent. A tool that halved accrual effort would save 2 hours. Moving timesheet approval deadlines to the last working day would save up to 2 days.
+Five fixes to try before buying anything
+Pull inputs forward. Set cut-offs for upstream teams before period end, and agree them as a service level, not a favour. For client close, request documents on a fixed schedule rather than one at a time when needed.
+Reconcile continuously. Move bank and card reconciliations to weekly or daily so period end only handles the last few days. This is the practical core of continuous accounting.
+Shrink approval queues. Set materiality thresholds below which a delegate can approve, and give approvers a fixed daily window during close.
+Start steps on partial data. Many accruals and reviews can begin with estimates and be trued up, so they stop waiting for the last input.
+Write down the tribal knowledge. Document who supplies each input and what "done" means.
+Then re-measure. Once the waits are out, the remaining work is visible, and that is the right moment to decide which steps are worth automating. This is the kind of mapping Mission Control does: measuring how close work moves between people and teams, without reading its contents.
+Questions
+How many days should the month-end close take?
+APQC's open benchmark puts the median time to complete monthly consolidated statements at 6 calendar days, based on more than 10,000 organisations. A better target is your own critical path with its avoidable waits removed, since organisational complexity varies widely.
+What is the critical path of a financial close?
+It is the longest chain of dependent steps from period end to final sign-off. Only delays on this chain move the close date, so improvement effort should start there rather than on whichever task takes the most effort.
+Will AI shorten our month-end close?
+Only if it removes waiting or rework on the critical path. Gartner's 2025 survey found most finance AI users reported low or moderate impact so far, so map where your close waits before deciding what to automate.
+Sources
+APQC, Cycle time in days to complete the monthly consolidated financial statements (open standards benchmark)
+APQC, Cycle time in days for finance shared services center to complete the monthly financial close
+Ledge, Month-end close benchmarks for 2025 (vendor survey)
+CFO Dive, Data bottlenecks stall CFOs' push for faster month-end close (2026, reporting LiveFlow vendor survey)
+Journal of Accountancy, Overtime, stress common during month-end close (2017)
+EY, How to transform record-to-report to drive strategic value
+CPA Practice Advisor, Report shows operational challenges facing CPA firms (2026, HubSync vendor report)
+The Accountant via Yahoo Finance, Report says workflow remains top challenge for accounting firms (2025)
+Gartner, Survey shows finance AI adoption remains steady in 2025 (2025)
+Gartner, CFOs must take a more disciplined approach to finance AI investment (2026)
+Journal of Accountancy, The accounting graduate pipeline: where do things stand? (2025)
+US Bureau of Labor Statistics, Occupational Outlook Handbook: Accountants and auditors
+Accountants Daily, CA ANZ survey indicative of Australia-wide accountant, auditor shortages (2026)
+
+## AI agents rarely fail at the task. They fail at the hand-off
+URL: https://missioncntrl.io/news/ai-agents-fail-at-the-handoff
+Published: 2026-11-23
+
+Key points
+Most AI agent projects in services operations do not stall on the task itself. They stall where work moves between the agent, people and other systems.
+Benchmarks point the same way: in the CRMArena-Pro benchmark, leading agents fell from about 58 per cent success on single-turn tasks to about 35 per cent once a multi-turn conversation was involved.
+Gartner expects over 40 per cent of agentic AI projects to be cancelled by the end of 2027, citing cost, unclear value and weak risk controls.
+Regulators and government guidance ask for the same things a good hand-off needs: a named accountable person, real override points and a way to stop.
+Before you build an agent, write its hand-off spec: entry criteria, context packet, confidence and escalation rules, a named owner, an exception queue and a measure of hand-off wait time.
+Most conversations about AI agents start with the task. Can it draft the engagement letter, triage the claim, reconcile the statement? In services operations, the task is rarely where an agent project dies.
+It dies at the edges. The agent finishes its part and nobody picks up the exception. A reviewer gets a draft with no idea what the agent checked. The agent writes to the practice system, the update half fails, and nobody notices for a week. The case now waits in a new place.
+Our view is simple. Design the hand-off before you design the agent. Hand-offs are where work stops moving, and, as we argued in work about work is a hand-off problem , they are where most delay in services firms already lives.
+Stalling is the normal outcome, for now
+The evidence on agent projects is early, but it points one way. In June 2025 Gartner predicted that over 40 per cent of agentic AI projects will be cancelled by the end of 2027 , due to escalating costs, unclear business value or inadequate risk controls. Gartner's advice was to redesign workflows rather than bolt agents onto legacy systems. Treat this as a forecast, not a measurement. The supporting poll was of 3,412 webinar attendees, only 19 per cent of whom reported significant investment.
+McKinsey's survey data shows the same gap between trying and scaling. In its State of AI 2025 (1,993 participants, fielded June to July 2025), 23 per cent of respondents said their organisation was scaling an agentic system somewhere, and another 39 per cent were experimenting. The 2026 edition (1,719 participants, fielded May to June 2026) found about two in ten respondents scaling agents. Large enterprises rose to 40 per cent from 27 per cent, while smaller organisations stayed at 22 per cent.
+The most quoted figure comes from MIT NANDA's "GenAI divide" report, which, as The Register reported , found that 95 per cent of organisations saw zero return from their generative AI efforts. Read it with care. It rests on 52 interviews, a survey of 153 people and a review of more than 300 public initiatives, and "return" is not tightly defined. Its diagnosis is more useful: the authors blamed systems' inability "to retain data, to adapt, and to learn over time", and said tools fail in critical workflows due to "lack of memory and customization". That is a context problem.
+Agents are weakest exactly where work changes hands
+Research benchmarks show how agents actually behave. Four findings stand out.
+Talking to people is hard for agents. Carnegie Mellon's TheAgentCompany benchmark simulates a small company. The best agent tested completed 24 per cent of tasks , or 34.4 per cent with partial credit. The failures were telling: one agent never contacted the HR manager when told to, and another, unable to find a colleague in the chat platform, renamed a different user to that person's name. These are hand-off failures, not skill failures.
+Multi-turn work drops sharply. The CRMArena-Pro benchmark found leading agents reached about 58 per cent success on single-turn business tasks and about 35 per cent in multi-turn settings.
+Repeat runs are inconsistent. The tau-bench study tested agents in customer service conversations with tools and policy rules. The best succeeded on under half of tasks, and the chance of succeeding on the same task eight times in a row was below 25 per cent in the retail domain. Operations runs the same process thousands of times.
+Agent to agent hand-offs fail too. A study of more than 1,600 traces from seven multi-agent frameworks identified 14 failure modes in three groups: system design issues, inter-agent misalignment and task verification.
+One more finding matters for design. METR measured agents on software tasks and found near 100 per cent success on tasks that take humans under four minutes, and under 10 per cent on tasks over about four hours . The trend is moving quickly. For now, the practical response is to break work into short, checkable steps. That raises the number of hand-offs, which is why designing them well is the whole game.
+Three hand-offs, three ways to fail
+Human to agent: the trigger and the context
+The agent starts on an incomplete file, or starts too early, or nobody is sure what starts it at all. The fix is a clear trigger and a defined set of inputs that must be present before the agent begins.
+Agent to human: the escalation
+Either everything escalates, so the reviewer becomes a rubber stamp, or nothing does, and errors reach clients. Escalations that arrive without context force the person to redo the agent's work. People who approve hundreds of clean outputs stop reading them, a risk the EU AI Act calls automation bias.
+Agent to system: the write-back
+This one fails silently. The agent believes it updated the record, the system rejected half the fields, and the next step runs on stale data. Anthropic's engineering guidance says agents should gain "ground truth" from the environment at each step , pause for human feedback at checkpoints or when blocked, and use stopping conditions such as a maximum number of iterations.
+What the rule-makers already ask for
+Article 14 of the EU AI Act, which applies to systems classed as high-risk, says people overseeing them must be able to understand the system's capacities and limitations, stay aware of automation bias, correctly interpret its output, override or reverse it, and halt it through a "stop" button or similar procedure . Most back-office agents will not be high-risk under the Act. The list still works well as a design spec.
+Australia's National AI Centre takes a similar line. Its Guidance for AI Adoption replaces the Voluntary AI Safety Standard with six essential practices, including "decide who is accountable" and "maintain human control". As Allens summarises it , that means naming a specific person for each AI system, building in human override points, and keeping alternative pathways so critical functions continue if a system fails.
+McKinsey's 2025 high performers were also more likely to have defined processes to determine how and when model outputs need human validation .
+The hand-off design checklist
+Write one for every agent before anyone builds it. If you cannot fill a line in, you are not ready.
+Entry criteria. What event starts the agent, and which inputs must be present and valid first? If they are missing, who is asked, and by when?
+Context packet. What the agent receives, and what it passes on: the inputs it used, the checks it ran, what it could not verify and why it stopped.
+Confidence and escalation rules. Written conditions that send a case to a person: missing data, values outside set limits, a client flagged as sensitive, conflicting sources, repeated failed attempts.
+Named human owner. One person accountable for the agent's output and its exceptions, with authority to pause or stop it. A team name is not an owner.
+Exception queue. One visible place where escalations land, with a service level, a backup person and a fallback manual process if the agent is switched off.
+Write-back and audit trail. Every system update confirmed by reading it back. Every action logged with inputs, output, rule applied and who approved it.
+Hand-off wait time. Measured from the moment the agent escalates to the moment a person acts, and from the moment a person approves to the moment the next step starts.
+Illustrative example
+An agent prepares new client onboarding files. It completes its part in 10 minutes. One case in five escalates for a missing identity document, and those escalations sit in a shared inbox for an average of two working days. Those cases now wait longer at the hand-off than they ever spent in data entry. Fixing the queue, with a named owner and a same-day service level, does more for elapsed time than any improvement to the agent.
+Measure the wait, not just the accuracy
+Most agent pilots report accuracy and hours saved. Neither tells you whether clients get served sooner. For that, track three numbers per agent: escalation rate, rework rate after human review, and hand-off wait time. If accuracy rises while elapsed time stays flat, the work is waiting somewhere you are not looking.
+This is the same discipline behind flow efficiency : most elapsed time is waiting, and agents can add new waiting points as easily as they remove old ones. It is also why so many automation programs stall after a promising pilot. At Mission Control we map how work moves between people, teams and systems before sizing an automation, because the hand-offs decide whether it pays.
+Questions
+Why do AI agent projects stall in services operations?
+The agent often performs its core task well enough, but work stalls where it moves between the agent, people and systems. Missing inputs, escalations without context and unowned exception queues add new waiting points that cancel out the time saved.
+What should an AI agent hand-off include?
+A good hand-off has clear entry criteria, a context packet showing what the agent used and checked, written escalation rules, one named human owner and a visible exception queue. Every system update should be confirmed and logged.
+How do you measure whether an AI agent is working?
+Track escalation rate, rework rate after human review and hand-off wait time alongside accuracy. If accuracy improves but total elapsed time for each case does not fall, work is waiting at a hand-off that needs fixing.
+Sources
+SD Times, Gartner: More than 40% of agentic AI projects will be canceled in the next few years (2025)
+McKinsey, The state of AI in 2025: Agents, innovation, and transformation (2025)
+McKinsey, The state of AI in 2026: On the road to ROI (2026)
+The Register, report on MIT NANDA's The GenAI Divide: State of AI in Business 2025 (2025)
+Carnegie Mellon University School of Computer Science, TheAgentCompany benchmark results (2025)
+Huang et al., CRMArena-Pro: Holistic assessment of LLM agents across diverse business scenarios and interactions (2025)
+Yao et al., tau-bench: A benchmark for tool-agent-user interaction in real-world domains (2024)
+Cemri et al., Why do multi-agent LLM systems fail? (2025)
+METR, Measuring AI ability to complete long tasks (2025)
+Anthropic, Building effective agents (2024)
+European Commission AI Act Service Desk, Article 14: Human oversight
+Allens, Governance doesn't stand still: 9 FAQs on the Government's new Guidance for AI Adoption (2025)
+
+## Process drift: closing the gap between the SOP and the real work
+URL: https://missioncntrl.io/news/process-drift-playbook
+Published: 2026-11-23
+
+Key points
+Every documented process drifts. The manual describes work as imagined. Your systems record work as done. The gap is information.
+Conformance checking, a process mining technique, compares recorded activity with the documented model. Real logs rarely fit perfectly.
+Not all drift is bad. Sort each variant into one of three buckets: good drift to adopt, bad drift to fix, or a workaround that signals a broken system.
+Regulators now expect documented processes that hold up under testing. APRA's CPS 230 commenced on 1 July 2025 and the FCA's operational resilience deadline passed on 31 March 2025.
+You can find drift by measuring how work moves between systems and teams. You do not need to read anyone's emails or log their keystrokes.
+Open the procedure manual for any core workflow in your firm. Now ask the people who run it every day to walk you through what they actually do. The two versions will not match. They never do.
+This is process drift: the slow, mostly invisible gap between the documented process and the real one. It builds through new systems, staff turnover and small fixes nobody wrote down. Most firms discover it during an incident, an audit or a failed automation project.
+Our view is simple. Drift is not a compliance failure to stamp out. It is honest feedback on your operating model. The job is to find it, classify it and act on it on a fixed cadence.
+Work as imagined versus work as done
+Safety science has studied this gap for decades. Erik Hollnagel, writing in EUROCONTROL's HindSight magazine , puts it plainly: "the way that people think about work and the way that work is actually done are not necessarily the same." He adds that it is "impossible, in practice as well as in principle, precisely to prescribe how work should be done."
+This is the core of the Safety-II view. Safety-I asks why things go wrong and treats any deviation from the procedure as the problem. Safety-II asks why things go right, and recognises that people adjust their work constantly to get it done. EUROCONTROL's systems thinking principles make the same point: "Performance of the same task or activity will and must vary."
+For a services firm, the lesson is direct. A manual cannot anticipate every case, so people adapt. If nobody sees those adaptations, you lose control of risk, cost and quality. You need visibility, not stricter rules.
+Why documentation goes stale
+Aviation maintenance has some of the best evidence on how procedures fail in practice. Robert Baron's review for the Flight Safety Foundation lists its causes: procedures that are missing, incomplete or unrealistic, technicians who find a "better way," and routine violations that spread until they become the norm. He cites NASA reporting data where missing information was the most common document deficiency, at 48 per cent of 458 reports. Aviation is far more tightly regulated than most services work. If its manuals drift, yours will too.
+Office work shows the same pattern. APQC's self-reported survey of 982 knowledge workers names "workarounds for broken systems and processes" among the main drains on their time.
+Process mining and conformance checking
+Workshops tell you what people believe happens. System data tells you what was recorded. The Process Mining Manifesto , published by the IEEE Task Force on Process Mining in 2011, defines the discipline as a way to "discover, monitor and improve real processes (i.e., not assumed processes) by extracting knowledge from event logs."
+Its conformance checking technique measures drift. It compares an existing process model with an event log of the same process to check "if reality, as recorded in the log, conforms to the model and vice versa." Two measures matter. Fitness asks whether the documented model can reproduce what actually happened. Precision asks whether the model allows far more behaviour than ever occurs. Work by Adriansyah, van der Aalst and colleagues notes that deviations between recorded behaviour and models "often occur in practice," and none of the real logs they tested fitted their models perfectly.
+Process mining is not task mining
+The two are often confused. As IBM explains , process mining uses event logs from systems such as ERP and CRM to analyse end-to-end processes. Task mining uses desktop data: "keystrokes, mouse clicks and data entries," and sometimes screenshots.
+That distinction matters for trust. The UK ICO's guidance on monitoring workers lists keystroke monitoring as high-risk processing that needs a data protection impact assessment, and says "If you can achieve your aim in a less intrusive way, you must do so." For process drift, it usually exists. Status changes, assignments and handoffs between systems tell you how work moves without recording what anyone typed. More in how to map work without monitoring people .
+Why it matters now: regulators want processes that work
+APRA's Prudential Standard CPS 230 commenced on 1 July 2025. It requires regulated entities to "identify and document the processes and resources needed to deliver critical operations," including people, technology, information, facilities and service providers. It also requires tolerance levels for each critical operation and a systematic testing program for business continuity. APRA's announcement covers banks, insurers and superannuation funds.
+In the UK, the FCA required in-scope firms to be able to operate important business services within impact tolerances by 31 March 2025, with mapping and testing complete. In its March 2026 observations , the FCA found that mapping "has been largely focused on technology," and said firms should also include "facilities, people, processes, information." It also noted that "Clear ownership and accountability of mapping data reduce the risk of outdated or inaccurate information."
+A process map that describes work as imagined will not survive a real test. If you are not regulated yourself, your regulated clients may be, and their expectations flow down to service providers.
+The playbook: seven steps to find and close drift
+Pick one workflow that matters. Choose one with a clear start and end, real volume and real consequences, such as onboarding or claims.
+Collect the documented version. Gather the SOP, process map and training material. Note who owns each and when it was last reviewed.
+Extract the recorded version. Pull case IDs, activity names, timestamps and team or role from the systems where the work lives. Use metadata only. You need to know that a file moved from intake to review on Tuesday, not what the email said.
+Compare the two. Check the most common paths against the documented steps. Look for skipped steps, extra steps, steps in a different order, rework loops and work leaving the system of record.
+Talk to the people doing the work. Bring the variants to the team, not only their managers. Ask why each path exists. The people closest to the work understand its constraints best.
+Classify every material variant. Use the three buckets below. Each one gets an owner and a decision.
+Close the loop. Update the document, fix the system or retrain, then re-measure on the next cycle to confirm the change held.
+The drift checklist
+Is the SOP more than 12 months past its last review?
+Do the documented steps match the activity names in your systems?
+What share of cases follow the documented path end to end?
+Where do cases loop back to an earlier step?
+Where does work leave the system of record, into email, spreadsheets or chat?
+Do controls in the document, such as approvals or checks, actually show up in the data?
+Classifying variants: adopt, fix or redesign
+Steven Alter's theory of workarounds defines a workaround as "a goal-driven adaptation, improvisation, or other change to one or more aspects of an existing work system." His review shows workarounds cut both ways: they can "illuminate a path toward greater efficiency," and they can "obscure latent errors and inefficiencies." That is why classification matters more than detection.
+Good drift: adopt it. The team found a faster or safer path that still meets every control. Write it into the standard and spread it.
+Bad drift: fix it. A step that protects the client or the firm is being skipped, usually under time pressure. Example: a conflicts check recorded after work starts. Fix the pressure that made skipping feel reasonable, not only the behaviour.
+Workaround: redesign the system. People leave the official path because the official path does not work. Example: a shared spreadsheet tracking status because the practice system cannot. Do not ban the spreadsheet. Fix what made it necessary.
+Illustrative example
+A 300-person firm checks its onboarding SOP against six months of system data. Many cases loop back from review to intake for missing documents. Some skip sign-off entirely. The loop is a workaround caused by a weak intake form. The skipped sign-off is bad drift. One team's single upfront document checklist is good drift worth adopting firm-wide.
+Set a cadence
+Drift is continuous, so the review must be too:
+Monthly: track conformance and rework rates for your most critical workflows. Flag any sudden change.
+Quarterly: run the full seven-step review on one or two workflows. Rotate through your process inventory.
+After any change: re-measure after a system rollout, restructure or new client segment. These are when drift accelerates.
+Annually: confirm every SOP has a named owner and a review date, and that regulated processes have been tested against real data.
+Drift often shows up first at handoffs, a theme we explored in why work about work is a handoff problem . Mission Control was built on the same principle: measure how work moves between people and teams, not what they write.
+Questions
+What is process drift?
+Process drift is the gap between how a process is documented and how it is actually performed. It builds through system changes, turnover and informal fixes. Some drift improves the process and some creates risk, so classify it rather than simply eliminating it.
+What is the difference between process mining and task mining?
+Process mining analyses event logs from business systems to reconstruct end-to-end processes. Task mining captures desktop activity such as clicks, keystrokes and sometimes screenshots. Process mining is far less intrusive, which matters for trust and privacy.
+How often should we review SOPs against real practice?
+Track conformance on critical workflows monthly and run a full review on one or two workflows each quarter. Re-measure after any major system or organisational change. Make sure every SOP has a named owner and a review date.
+Sources
+Hollnagel, E., Can we ever imagine how work is done? HindSight 25, EUROCONTROL (2017)
+EUROCONTROL, Systems Thinking for Safety: Ten Principles (2014)
+Baron, R., Procedural drift: causes and consequences, Flight Safety Foundation (2018)
+APQC, Survey finds one quarter of knowledge workers' time is lost due to productivity drains (2021)
+IEEE Task Force on Process Mining, Process Mining Manifesto (2011)
+Adriansyah, A., Munoz-Gama, J., Carmona, J., van Dongen, B. F. and van der Aalst, W. M. P., Measuring precision of modeled behavior
+IBM, What is task mining?
+ICO, Employment practices and data protection: monitoring workers (2023)
+APRA, Prudential Standard CPS 230 Operational Risk Management (2023)
+APRA, APRA's new prudential standard on operational risk management comes into force (2025)
+FCA, Operational resilience
+FCA, Operational resilience: insights and observations one year on (2026)
+Alter, S., Theory of workarounds, Communications of the Association for Information Systems (2014)
+
+## The cost of rework: the biggest line your P&L never shows
+URL: https://missioncntrl.io/news/cost-of-rework-services
+Published: 2026-11-23
+
+Key points
+Rework is work done twice: corrections after review, second requests to clients, returned files and time written off. Most services firms never see it as one number.
+It hides because finance records it in pieces: salary, write-offs, slower billing.
+Quality engineering solved this decades ago with first pass yield and cost of poor quality. Both translate directly to services workflows.
+Measure rework per workflow, not per person, then price it: rework hours at loaded cost, plus write-offs, plus delay.
+A priced rework rate turns "be more careful" into "fix the step that causes it".
+Ask a services firm about its biggest costs and you will hear salaries, rent and technology. Ask what it costs to do work twice and you will get silence. Not because the number is small. Because nobody has added it up.
+Rework in services looks like small, reasonable things. A reviewer sends a file back. A client is asked for a document they already sent. A partner writes off two hours because the junior took a wrong turn. A claim bounces between teams because a field was missing. Together they are, in our view, the largest cost line most services P&Ls never show.
+The fix is not a culture campaign. It is measurement: treat rework as a flow through each workflow, count it and price it.
+Why rework never shows up in the accounts
+Manufacturing learned to see this cost long ago. ASQ defines the cost of poor quality as the costs of providing poor quality products or services, split into internal failure costs (defects found before the customer receives the work) and external failure costs (defects found after). The Juran Institute argues that poor quality can cost an organisation 20 to 30 per cent of total annual revenue. Treat that as an advocate's estimate, not a services benchmark. As MIT Sloan Management Review noted, the method was built for factories and is rarely used in services.
+In a factory, scrap sits in a bin. In a services firm, rework disappears into three places:
+Salary. Correction hours are paid whether or not they are billed. They look like ordinary capacity.
+Write-offs and write-downs. Finance sees the number, but not the cause.
+Delay. Every loop pushes out invoicing and cash. Nobody books that as a cost.
+Thomas Redman called the hidden version of this the "hidden data factory": the extra steps people take to find, correct and verify data they do not trust. In that 2016 Harvard Business Review article he cites IBM's estimate that poor quality data cost the US $3.1 trillion a year, and estimates that knowledge workers lose as much as half their time to them. Both figures are rough and a decade old. The mechanism is unchanged.
+What the evidence from professional services says
+Law firms publish the most data on the financial end of rework. Every figure below carries a caveat about who collected it.
+Clio's 2025 Legal Trends Report puts the average firm's realisation rate (billable work that gets invoiced) at 88 per cent and its collection rate at 93 per cent, from anonymised data on its own paying US customers. Clio sells practice management software, so its users are not a random sample.
+Clio's mid-sized firm report , published as partner content on the Law Society site, found realisation of 83 per cent and collection of 84 per cent in 2023. In other words, about 17 per cent of billable hours never reached an invoice.
+BigHand's sixth Law Firm Finance Report , published in January 2026 and based on more than 800 senior legal finance professionals, reported that nearly 90 per cent of firms saw increased write-offs, and 88 per cent expect further rises in 2026. BigHand is also a vendor.
+The Thomson Reuters Law Firm Rates Report 2026 , covering 195 US firms, found that firms grouped by heavy write-offs and write-downs still collected roughly what other groups did, between $553 and $580 an hour.
+Not every write-off is rework. Some are discounts or scope disputes. But a meaningful share is time spent fixing or redoing work the client will not pay for twice. Realisation reports show the symptom, not the workflow that caused it.
+Failure demand: rework that arrives from outside
+John Seddon gave the other half of the picture a name. Failure demand is, in the words of a UK Government Digital Service post crediting him, "demand caused by a failure to do something or do something right for a customer". The client chasing an update. The call asking why an invoice is wrong.
+The best evidence comes from the UK public sector. A study at Gloucestershire Constabulary, published in Public Money & Management , re-examined 534 non-urgent incidents and found about 30 per cent of non-urgent demand could be avoided. The same paper cites Seddon's estimate that failure demand accounts for 20 to 60 per cent of customer demand in financial services. In April 2026 the Strategy Unit, writing for the Health Foundation, published a review of failure demand in the NHS . It cites one GP practice where about a fifth of 599 consultations were attributed to system failures. It is candid that this is a single site and warns against making failure demand a performance target, because it invites gaming.
+That caution applies to services firms too. Measure failure demand to find causes, not to rank people.
+The measures: first pass yield and rework rate
+Quality engineering offers two simple measures. First pass yield counts only items that came through a process as good with no rework. Rolled throughput yield multiplies the yield of each step to give the probability that a single item passes through the whole process without a defect.
+First pass yield = items completed with no rework ÷ items started
+Rework rate = 1 minus first pass yield
+Rolled throughput yield = yield at step 1 × yield at step 2 × yield at step 3 ...
+Three steps at 90, 85 and 95 per cent first pass yield give a rolled throughput yield of about 73 per cent. More than a quarter of matters loop back somewhere, even though no single step looks bad.
+That is why rework persists. Each team sees a respectable number for its own step. Nobody owns the product.
+Then price it. Rework has three cost components, and most firms count at most one of them.
+Cost of rework = (rework hours × loaded hourly cost) + write-offs attributable to rework + delay cost
+Loaded cost is salary plus on-costs and overhead per productive hour. Delay cost is at minimum the cost of capital on delayed fees.
+Illustrative example: one workflow, priced
+Illustrative example. These figures are invented to show the arithmetic, not drawn from any firm.
+An accounting firm runs 1,000 monthly bookkeeping jobs at an average fee of $1,200. At review, 220 are sent back (first pass yield 78 per cent), each taking 1.5 hours to fix: 330 hours. Another 150 jobs need a second document request to the client, at 0.4 hours each: 60 hours. Loaded cost is $95 an hour.
+Rework hours: 390 × $95 = $37,050. Write-offs traced to returned jobs: $9,000. Delay: the 220 returned jobs invoice six days later, worth about $350 a month at an 8 per cent cost of capital.
+Total: about $46,400 a month, or roughly $557,000 a year, close to 4 per cent of that workflow's revenue. And none of it appears on a single line of the accounts.
+The delay cost is small. The write-offs are visible. The hours are the big number, and finance never sees them, because they look like staff doing their jobs.
+How to measure rework without monitoring individuals
+The aim is to find the steps that generate rework, not the people who touch it. Rework is usually a property of the process: unclear instructions, missing inputs, an unwritten review standard. We cover the principles in how to map work without monitoring people . For rework specifically:
+Pick one workflow with a clear start, finish and review point: onboarding, monthly close, claims, conveyancing.
+Define what counts as a loop. A status moving backwards, a file reopened after review, a repeat client request, a credit note. Write the rules down first.
+Count loops from system events, not timesheets or screen activity. Practice management, ticketing and document systems already record status changes. Report at workflow and step level only.
+Classify each loop by cause: missing client input, internal error, changed instructions, unclear standard. A sample of 50 to 100 cases is enough.
+Estimate hours per loop from a short team workshop, not individual tracking. A range is fine.
+Join it to finance. Match write-offs and write-downs to the same workflows, and price the result with the formula above.
+Fix the top cause, then re-measure. Report first pass yield monthly, by workflow, alongside realisation.
+The output is a short table: each workflow, its first pass yield, its annual cost of rework and its top two causes. It also feeds directly into an automation business case a CFO will accept , because the saving is measured, not assumed.
+Mission Control maps how work moves between teams, including where it loops back, without reading content or ranking staff. But the method works with a spreadsheet. What matters is that someone finally adds the number up.
+Questions
+What is a rework rate in a services firm?
+A rework rate is the share of work items in a workflow that need correcting, reopening or redoing before they are complete. It equals one minus first pass yield. Measure it per workflow, such as onboarding or monthly close, rather than per person.
+How do you calculate the cost of rework?
+Multiply rework hours by the loaded hourly cost of the people doing it, then add write-offs traced to rework and the cost of delayed invoicing. The hours are usually the largest part and the one most firms never count.
+Is failure demand the same as rework?
+They are close relatives. Rework is internal effort spent redoing work, while failure demand is extra demand from clients caused by something not being done, or not done right, the first time. Both are avoidable and both should be measured by workflow and cause, not used to rank staff.
+Sources
+ASQ, Cost of quality (COQ)
+Juran, The office: how poor quality may be hurting your bottom line (2017)
+MIT Sloan Management Review, Applying cost of quality to a service business
+Redman, T. C., Bad data costs the U.S. $3 trillion per year, Harvard Business Review (2016)
+Clio, Legal Trends Report (2025)
+Law Society (partner content from Clio), The struggle for mid-sized firms (2024)
+Legal Futures, BigHand research reveals financial fragility and profit risk among major law firms (2026)
+Thomson Reuters Institute, Law Firm Rates Report 2026 (2025)
+UK Government Digital Service, Reducing failure demand for digital services (2014)
+Public Money & Management, Implementing failure demand reduction as part of a demand management strategy (2021)
+The Strategy Unit for the Health Foundation, Could the concept of failure demand help improve the NHS? (2026)
+First-pass yield (definition)
+Minitab, What are throughput yield and rolled throughput yield?
+
+## Automated decisions: Australia's 10 December privacy deadline
+URL: https://missioncntrl.io/news/automated-decisions-privacy-december-2026
+Published: 2026-11-23
+
+Key points
+From 10 December 2026, Australian privacy policies must describe where computer programs make, or substantially and directly help make, decisions that could significantly affect people.
+The test is broad. Rule-based tools, spreadsheets and AI can all be caught, and human review of the output does not take a tool out of scope.
+The UK and US are moving the same way: new UK GDPR safeguards are in force, and California's rules apply from 1 January 2027.
+You cannot disclose automated decisions you have not mapped. Start with an inventory of where automation touches decisions about people.
+This is general information, not legal advice.
+In less than three weeks, a new line appears in the Australian Privacy Principles. If your organisation uses a computer program to make, or to do something substantially and directly related to making, a decision that could significantly affect someone, your privacy policy has to say so.
+Most organisations will treat this as a drafting job. It is not. The hard part is knowing what to write, and that depends on a question few operations teams can answer: where, exactly, does automation shape decisions about people? What follows is general information, not legal advice.
+What the Australian rule says
+The Privacy and Other Legislation Amendment Act 2024 received Royal Assent on 10 December 2024. Part 15 of Schedule 1, on automated decisions and privacy policies, commences the day after 24 months from Royal Assent: 10 December 2026. It applies to decisions made after that date, even if the program and the data were in place earlier.
+New APP 1.7 requires the privacy policy to contain extra information where three things are true:
+the entity has arranged for a computer program to make a decision, or to do a thing substantially and directly related to making a decision;
+the decision could reasonably be expected to significantly affect the rights or interests of an individual; and
+personal information about the individual is used in the operation of the program.
+APP 1.8 sets out what to disclose: the kinds of personal information used, the kinds of decisions made solely by the program, and the kinds of decisions where the program does a substantially and directly related thing. APP 1.9 adds that refusing or failing to make a decision counts, and that effects can be adverse or beneficial. Its examples include decisions affecting rights under a contract or access to a significant service or support.
+The OAIC has published a fact sheet, a flowchart and updated APP 1 Guidelines, shaped by 90 written submissions. Allens reports the final guidance was released on 30 September 2026.
+Three points in the guidance that matter for operations
+"Computer program" is broad. According to Allens' reading of the guidance , it covers rule-based tools, machine learning, generative AI and everyday software such as spreadsheets. An old eligibility formula in a workbook can count.
+Human review is not an exit. The OAIC fact sheet says "substantially" means the output is a key factor in the human's decision, and "directly" means it has a direct connection with making it. Advisory outputs can qualify. Scope can apply even where the output is subject to human review. Machine learning or generative AI outputs used in significant decisions generally fall in scope unless subject to extensive human oversight and control.
+Significance has a low floor. The fact sheet says the impact must be more than trivial. Its examples include recruitment software that sorts candidates, eligibility for insurance or housing assistance, approving or rejecting credit, and AI reports ranking employees for performance, promotion or bonuses. One example notes that using a program's rankings to decide whom not to contact is still in scope.
+The obligation sits with the user of the tool, not the vendor . Gadens notes the OAIC's advice to take a cautious approach where uncertain.
+How the UK compares
+The UK has loosened permission, not accountability. Section 80 of the Data (Use and Access) Act 2025 replaces UK GDPR Article 22 with new Articles 22A to 22D. A decision is based solely on automated processing where there is "no meaningful human involvement". A decision is significant if it has a legal or similarly significant effect.
+The UK government describes the result as a more permissive framework: organisations can make these decisions in wider circumstances but must put safeguards in place. Under Article 22C, those safeguards must let people get information about the decision, make representations, obtain human intervention and contest the decision. Tighter limits remain where special category data is involved (Article 22B).
+Section 80 came into force on 5 February 2026 under Commencement Regulations No. 6 . The ICO's updated guidance on the safeguards is still labelled draft. It is blunt on two points: human intervention "cannot be tokenistic", and spot checking an automated process does not meet the safeguard.
+Recruitment is an early focus. In March 2026 the ICO reported gaps in transparency, safeguards, consistency of human involvement and bias monitoring among employers using automated hiring.
+How the US compares
+California. The California Privacy Protection Agency announced in September 2025 that its regulations were approved, effective 1 January 2026. Businesses using automated decisionmaking technology (ADMT) for significant decisions must comply from 1 January 2027. Fisher Phillips summarises ADMT as technology that processes personal information and uses computation to replace or substantially replace human decision making. Significant decisions cover financial or lending services, housing, education enrolment, employment or contracting, and healthcare. Businesses must give a pre-use notice, offer an opt-out or a human appeal, and describe access rights. Hunton notes that human reviewers must be able to evaluate the output and alter the final decision.
+Colorado. The 2024 Colorado AI Act (SB24-205) was delayed from 1 February 2026 to 30 June 2026, then repealed and replaced by SB 26-189 , signed on 14 May 2026 and taking effect 1 January 2027. Deployers will need to give notice before using covered technology in a consequential decision, explain adverse decisions within 30 days, offer meaningful human review where commercially reasonable, and keep records for three years. The picture is still unsettled. A federal court in Colorado paused enforcement in April 2026 pending a constitutional challenge, and Eckert Seamans reports that Attorney General rulemaking had not formally started.
+Our view: you cannot disclose what you have not mapped
+The three regimes share one dependency. Each assumes you know where software shapes a decision about a person, what data it uses, and what the human does with the output.
+In most services organisations, nobody holds that picture. Automation arrives in pieces: a triage rule in the claims system, a score in the applicant tracking tool, a macro that flags overdue rent, an AI summary read before approving a credit limit. Together they form a decision system no one designed or documented.
+So the privacy policy is the last step, not the first. Write it before you map the work and you will either under-disclose and carry the risk, or over-disclose in vague terms that help nobody. We have written before about mapping how work moves without monitoring people . The same discipline applies here: trace the decision points, not the individuals.
+A practical readiness checklist
+Inventory the decision points. For each workflow touching clients, claimants, candidates, tenants or staff, list where decisions are made about a person, and every program feeding them: rules, scores, rankings, filters, summaries, flags. Include vendor tools and spreadsheets.
+Classify significance. Could the decision affect someone's rights or interests in a more than trivial way: a service, a contract, money, housing, employment, health? Record your reasoning for borderline cases.
+Classify the program's role. Does the program decide alone, or do something substantially and directly related? The policy must distinguish the two.
+Check human involvement is real. The OAIC fact sheet points to interrogating outputs, reviewing underlying data, using additional evidence and documenting reasons for departing from the output. If reviewers rarely override or cannot see the inputs, treat the human step as weak.
+Read vendor contracts. Confirm what data each tool uses. The disclosure obligation is yours, not the vendor's.
+Update the privacy policy. Cover the kinds of personal information and both kinds of decision. Group similar processes, but call out sensitive data clearly.
+Keep records. Give the inventory and review evidence an owner. In the UK, California or Colorado, the same records support safeguards, notices and appeals.
+Illustrative example
+A claims team uses a rules engine to pay low-value claims automatically, and a model score adjusters see when deciding whether to refer a claim for investigation. The automatic payments are decisions made solely by a program. The referrals involve a substantially and directly related program, because adjusters rarely depart from the score. Both belong in the privacy policy.
+Beyond 10 December
+Treat the inventory as an operating asset, not a compliance file. Every new automation should pass through it before go-live. That keeps disclosures accurate and helps you decide which automations are worth building and which need a stronger human step. Mapping how work moves is a good starting point. The legal judgment on what to disclose stays with you and your advisers.
+Questions
+When does Australia's automated decision transparency obligation start?
+It commences on 10 December 2026, two years after the Privacy and Other Legislation Amendment Act 2024 received Royal Assent. It applies to decisions made after that date, even if the program and data were in place earlier.
+Does human review take a tool out of scope?
+Not on its own. The OAIC says a program can be substantially and directly related to a decision even where its output is subject to human review. What matters is whether the output is a key factor and how genuinely the human tests it.
+What must the privacy policy say?
+It must describe the kinds of personal information used by the programs, the kinds of decisions made solely by programs, and the kinds of decisions where programs do something substantially and directly related. Technical detail and commercially sensitive information are not required.
+Sources
+Federal Register of Legislation, Privacy and Other Legislation Amendment Act 2024 (as made, 2024)
+OAIC, New resources on transparency for use of AI and automated decision-making (2026)
+OAIC, APP 1.7 to 1.9 transparency obligation fact sheet (2026)
+Allens, Mandatory automated decision-making disclosure requirements are coming (2026)
+Gadens, Five weeks to 10 December: transparency on ADM (2026)
+legislation.gov.uk, Data (Use and Access) Act 2025, section 80 (2025)
+legislation.gov.uk, Data (Use and Access) Act 2025 (Commencement No. 6) Regulations 2026, regulation 2 (2026)
+GOV.UK, Data (Use and Access) Act 2025: data protection and privacy changes
+ICO, What are the ADM safeguards? (draft guidance, 2026)
+ICO, Automated decisions can streamline the hiring process with the right safeguards in place (2026)
+California Privacy Protection Agency, California finalizes regulations to strengthen consumers' privacy (2025)
+Fisher Phillips, New California regs will impact your AI and privacy policies (2025)
+Hunton, CPPA finalizes CCPA regulations on ADMT, risk assessments and cybersecurity audits (2025)
+Finnegan, Colorado replaces landmark AI Act: an overview of the new SB 26-189 framework (2026)
+Eckert Seamans, Colorado repeals and replaces its landmark AI statute (2026)
+Colorado Politics, Colorado's unprecedented AI law can't be enforced yet, judge rules (2026)
 
 ## Work about work is a hand-off problem, not a people problem
 URL: https://missioncntrl.io/news/work-about-work-is-a-handoff-problem

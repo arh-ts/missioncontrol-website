@@ -1,5 +1,50 @@
 [
   {
+    "slug": "month-end-close-waiting-not-working",
+    "cat": "Industries",
+    "title": "The month-end close is slow because work waits, not accountants",
+    "dek": "Most close days are spent waiting for late inputs, approvals and rework, not on accounting work. Map the close as a dependency network and fix the flow before buying software or AI.",
+    "description": "The month-end close is slow because work waits, not because accountants are slow. Map it as a dependency network and fix the flow before buying close tools.",
+    "date": "2026-11-23",
+    "motif": "bottleneck"
+  },
+  {
+    "slug": "ai-agents-fail-at-the-handoff",
+    "cat": "Automation",
+    "title": "AI agents rarely fail at the task. They fail at the hand-off",
+    "dek": "Agent projects in services operations stall where work moves between the agent, people and systems. Design the hand-off before you design the agent.",
+    "description": "AI agents in services operations rarely fail at the task. They stall at hand-offs. The evidence, and a checklist to design each hand-off before you build the agent.",
+    "date": "2026-11-23",
+    "motif": "handoff"
+  },
+  {
+    "slug": "process-drift-playbook",
+    "cat": "Playbooks",
+    "title": "Process drift: closing the gap between the SOP and the real work",
+    "dek": "Every documented process drifts from how work is really done. Here is a step-by-step playbook to find the gap, sort good drift from bad, and close it on a fixed cadence.",
+    "description": "A practical playbook for finding the gap between documented and real processes, classifying each variant, and closing it without monitoring what people write.",
+    "date": "2026-11-23",
+    "motif": "network"
+  },
+  {
+    "slug": "cost-of-rework-services",
+    "cat": "Finance",
+    "title": "The cost of rework: the biggest line your P&L never shows",
+    "dek": "Corrections, re-requests, returned files and write-offs add up to a cost most services firms never see as one number. Measure first pass yield by workflow, then price it.",
+    "description": "Rework is the biggest cost most services firms never measure. How to track first pass yield by workflow and put a price on rework without monitoring individuals.",
+    "date": "2026-11-23",
+    "motif": "case"
+  },
+  {
+    "slug": "automated-decisions-privacy-december-2026",
+    "cat": "Privacy",
+    "title": "Automated decisions: Australia's 10 December privacy deadline",
+    "dek": "From 10 December, Australian privacy policies must describe where software makes or shapes significant decisions about people. You cannot disclose what you have not mapped.",
+    "description": "Australia's new privacy rule on automated decisions starts 10 December 2026. What it requires, how UK and US rules compare, and a practical readiness checklist.",
+    "date": "2026-11-23",
+    "motif": "privacy"
+  },
+  {
     "slug": "work-about-work-is-a-handoff-problem",
     "cat": "Operations",
     "title": "Work about work is a hand-off problem, not a people problem",

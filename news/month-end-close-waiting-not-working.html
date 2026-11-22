@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The month-end close is slow because work waits, not accountants | Mission Control</title>
+<meta name="description" content="The month-end close is slow because work waits, not because accountants are slow. Map it as a dependency network and fix the flow before buying close tools.">
+<link rel="canonical" href="https://missioncntrl.io/news/month-end-close-waiting-not-working">
+<meta property="og:site_name" content="Mission Control">
+<meta property="og:locale" content="en_AU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The month-end close is slow because work waits, not accountants | Mission Control">
+<meta property="og:description" content="The month-end close is slow because work waits, not because accountants are slow. Map it as a dependency network and fix the flow before buying close tools.">
+<meta property="og:url" content="https://missioncntrl.io/news/month-end-close-waiting-not-working">
+<meta property="og:image" content="https://missioncntrl.io/news/img/month-end-close-waiting-not-working.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The month-end close is slow because work waits, not accountants | Mission Control">
+<meta name="twitter:description" content="The month-end close is slow because work waits, not because accountants are slow. Map it as a dependency network and fix the flow before buying close tools.">
+<meta name="twitter:image" content="https://missioncntrl.io/news/img/month-end-close-waiting-not-working.png">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Mission Control Newsroom" href="https://missioncntrl.io/news/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://missioncntrl.io/#org", "name": "Mission Control", "url": "https://missioncntrl.io", "logo": "https://missioncntrl.io/media/mission-control-logo.svg", "email": "hello@missioncntrl.io", "description": "Operational intelligence for services organisations: a live map of how work moves between people and teams, where it stalls, and what is worth automating.", "areaServed": ["AU", "US", "GB"], "founder": [{"@type": "Person", "name": "Abdul"}, {"@type": "Person", "name": "Amresh"}], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "hello@missioncntrl.io", "url": "https://missioncntrl.io/briefing"}}, {"@type": "WebSite", "@id": "https://missioncntrl.io/#website", "url": "https://missioncntrl.io", "name": "Mission Control", "publisher": {"@id": "https://missioncntrl.io/#org"}, "inLanguage": "en-AU"}, {"@type": "Article", "@id": "https://missioncntrl.io/news/month-end-close-waiting-not-working#article", "headline": "The month-end close is slow because work waits, not accountants", "description": "The month-end close is slow because work waits, not because accountants are slow. Map it as a dependency network and fix the flow before buying close tools.", "image": ["https://missioncntrl.io/news/img/month-end-close-waiting-not-working.png"], "datePublished": "2026-11-23", "dateModified": "2026-11-23", "inLanguage": "en-AU", "articleSection": "Industries", "author": {"@id": "https://missioncntrl.io/#org"}, "publisher": {"@id": "https://missioncntrl.io/#org"}, "mainEntityOfPage": "https://missioncntrl.io/news/month-end-close-waiting-not-working", "wordCount": 1842}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://missioncntrl.io/"}, {"@type": "ListItem", "position": 2, "name": "Newsroom", "item": "https://missioncntrl.io/news"}, {"@type": "ListItem", "position": 3, "name": "The month-end close is slow because work waits, not accountants", "item": "https://missioncntrl.io/news/month-end-close-waiting-not-working"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many days should the month-end close take?", "acceptedAnswer": {"@type": "Answer", "text": "APQC's open benchmark puts the median time to complete monthly consolidated statements at 6 calendar days, based on more than 10,000 organisations. A better target is your own critical path with its avoidable waits removed, since organisational complexity varies widely."}}, {"@type": "Question", "name": "What is the critical path of a financial close?", "acceptedAnswer": {"@type": "Answer", "text": "It is the longest chain of dependent steps from period end to final sign-off. Only delays on this chain move the close date, so improvement effort should start there rather than on whichever task takes the most effort."}}, {"@type": "Question", "name": "Will AI shorten our month-end close?", "acceptedAnswer": {"@type": "Answer", "text": "Only if it removes waiting or rework on the critical path. Gartner's 2025 survey found most finance AI users reported low or moderate impact so far, so map where your close waits before deciding what to automate."}}]}]}</script>
+<link rel="icon" type="image/svg+xml" href="/media/mark.svg">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-tight-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Inter Tight';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-tight-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-tight-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Inter Tight';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-tight-latin-600-normal.woff2) format('woff2')}</style>
+<style>
+body{margin:0;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
+.d{font-family:'Inter Tight',system-ui,sans-serif}
+.nl{transition:color .2s ease}.nl:hover{color:#0A0B0D}
+.b1{transition:background .2s ease,transform 150ms cubic-bezier(0.32,0.72,0,1)}
+.b1:hover{background:#2A2D33 !important}
+.b1:active,.b2:active{transform:scale(0.98)}
+.b2{transition:border-color .2s ease,background .2s ease}
+.b2:hover{border-color:#0A0B0D !important}
+.bw:hover{background:#E9EBEE !important}
+.ar{display:inline-block;transition:transform .2s ease}
+a:hover .ar{transform:translateX(3px)}
+.row{transition:background .2s ease}
+.row:hover{background:#F7F7F8}
+.tb{transition:color .2s ease,border-color .2s ease}
+.tb:hover{color:#0A0B0D !important}
+.tb:focus-visible{outline:2px solid #0A0B0D;outline-offset:2px}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.fade{animation:fade 360ms cubic-bezier(0.32,0.72,0,1) both}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.live{animation:pulse 2s ease-in-out infinite}
+.mnav{display:none;position:relative}.mnav>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;height:38px;padding:0 12px;border:1px solid #DADCE0;border-radius:8px;font-size:14px;font-weight:500;color:#0A0B0D}.mnav>summary::-webkit-details-marker{display:none}.mnav[open]>summary{border-color:#0A0B0D}.mnav-p{position:absolute;right:0;top:46px;min-width:220px;background:#FFFFFF;border:1px solid #EEEFF1;border-radius:12px;box-shadow:0 24px 48px -24px rgba(10,11,13,0.25);padding:8px;display:flex;flex-direction:column}.mnav-p a{padding:10px 12px;border-radius:8px;font-size:15px;color:#0A0B0D}.mnav-p a:hover{background:#F5F6F7}.mnav summary:focus-visible{outline:2px solid #0A0B0D;outline-offset:2px}@media (max-width:980px){.mnav{display:block}}
+@media (max-width:980px){.navlinks{display:none !important}.signin{display:none !important}.side{display:none !important}}
+@media (prefers-reduced-motion:reduce){.fade,.live{animation:none}}
+</style>
+<style>
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.crumb{font-size:14px;color:#5B616B;display:flex;gap:8px;flex-wrap:wrap}.crumb a:hover{color:#0A0B0D}
+.eyb{margin:0;font-size:14px;font-weight:500;color:#157A36}
+.h1{margin:20px 0 0;font-weight:500;font-size:clamp(34px,4.2vw,54px);line-height:1.06;letter-spacing:-0.033em;max-width:900px}
+.lead{margin:20px 0 0;font-size:19px;line-height:1.55;color:#5B616B;max-width:720px}
+.meta{margin-top:24px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:#8A9099}
+.art{max-width:700px;margin:0 auto;padding:56px 24px 0;font-size:18px;line-height:1.72;color:#24272C}
+.art p{margin:0 0 22px}
+.art h2{font-family:'Inter Tight',system-ui,sans-serif;font-weight:500;font-size:28px;line-height:1.2;letter-spacing:-0.02em;color:#0A0B0D;margin:52px 0 16px}
+.art h3{font-family:'Inter Tight',system-ui,sans-serif;font-weight:500;font-size:20px;line-height:1.3;color:#0A0B0D;margin:32px 0 10px}
+.art ul,.art ol{margin:0 0 22px;padding-left:22px}.art li{margin:0 0 10px;padding-left:4px}
+.art a{color:#0A0B0D;text-decoration:underline;text-decoration-color:#85EC68;text-decoration-thickness:2px;text-underline-offset:3px;transition:text-decoration-color .2s ease}
+.art a:hover{text-decoration-color:#0A0B0D}
+.art strong{font-weight:600;color:#0A0B0D}
+.tldr{border:1px solid #EEEFF1;background:#FAFAFB;border-radius:14px;padding:24px 28px 8px;margin:0 0 40px;font-size:16px;line-height:1.6}
+.tldr h2{margin:0 0 12px !important;font-size:15px !important;font-family:Inter,system-ui,sans-serif !important;font-weight:600 !important;letter-spacing:0 !important;color:#157A36 !important}
+.callout{margin:28px 0;padding:22px 26px;border-left:3px solid #85EC68;background:#F7FBF5;border-radius:0 12px 12px 0;font-size:16px;line-height:1.6}
+.callout p{margin:0 0 10px}.callout p:last-child{margin:0}
+.faq{margin-top:56px;padding-top:8px;border-top:1px solid #EEEFF1}
+.sources{margin-top:48px;padding-top:8px;border-top:1px solid #EEEFF1;font-size:15px;line-height:1.55;color:#5B616B}
+.sources h2{font-size:20px !important}.sources li{margin-bottom:8px}
+.hero-art{margin-top:48px;border-radius:16px;overflow:hidden;border:1px solid #EEEFF1;background:#FAFAFB}
+.hero-art img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
+.chip{display:inline-flex;align-items:center;height:34px;padding:0 14px;border:1px solid #E7E8EB;border-radius:999px;font-size:14px;font-weight:500;color:#5B616B;background:#FFFFFF;cursor:pointer;font-family:inherit;transition:border-color .2s ease,color .2s ease,background .2s ease}
+.chip:hover{color:#0A0B0D;border-color:#9AA0A8}.chip[aria-pressed="true"]{background:#0A0B0D;border-color:#0A0B0D;color:#FFFFFF}
+.chip:focus-visible,.card:focus-visible{outline:2px solid #0A0B0D;outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:28px}
+.card{display:flex;flex-direction:column;border:1px solid #EEEFF1;border-radius:14px;overflow:hidden;background:#FFFFFF;transition:border-color .2s ease,box-shadow .25s ease,transform .25s cubic-bezier(0.32,0.72,0,1)}
+.card:hover{border-color:#DADCE0;box-shadow:0 24px 48px -32px rgba(10,11,13,0.28);transform:translateY(-2px)}
+.card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#FAFAFB;border-bottom:1px solid #EEEFF1}
+.card .ci{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card .ct{font-family:'Inter Tight',system-ui,sans-serif;font-size:21px;line-height:1.25;font-weight:500;letter-spacing:-0.015em;color:#0A0B0D}
+.card .cd{font-size:15px;line-height:1.55;color:#5B616B}
+.card .cm{margin-top:auto;padding-top:8px;font-size:13px;color:#8A9099;display:flex;gap:14px}
+.feat{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);border:1px solid #EEEFF1;border-radius:16px;overflow:hidden;transition:border-color .2s ease,box-shadow .25s ease}
+.feat:hover{border-color:#DADCE0;box-shadow:0 30px 60px -40px rgba(10,11,13,0.3)}
+.feat img{display:block;width:100%;height:100%;object-fit:cover;background:#FAFAFB}
+.feat .fi{padding:40px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.feat .ft{font-family:'Inter Tight',system-ui,sans-serif;font-size:clamp(26px,2.6vw,34px);line-height:1.15;font-weight:500;letter-spacing:-0.025em}
+@media (max-width:820px){.feat{grid-template-columns:1fr}.feat .fi{padding:28px}}
+.legal{max-width:760px;margin:0 auto;padding:48px 24px 0;font-size:16px;line-height:1.7;color:#24272C}
+.legal h2{font-family:'Inter Tight',system-ui,sans-serif;font-weight:500;font-size:24px;letter-spacing:-0.015em;color:#0A0B0D;margin:44px 0 12px}
+.legal h3{font-size:17px;font-weight:600;color:#0A0B0D;margin:24px 0 8px}
+.legal p{margin:0 0 16px}.legal ul{margin:0 0 16px;padding-left:22px}.legal li{margin-bottom:8px}
+.legal a{text-decoration:underline;text-decoration-color:#85EC68;text-decoration-thickness:2px;text-underline-offset:3px}
+.cta{margin:120px auto 96px;max-width:1152px;border-radius:16px;background:#0A0B0D;color:#FFFFFF;padding:56px 48px;display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between;position:relative;overflow:hidden}
+.cta h2{margin:0;font-family:'Inter Tight',system-ui,sans-serif;font-weight:500;font-size:clamp(26px,2.8vw,38px);line-height:1.1;letter-spacing:-0.025em;max-width:560px}
+.cta p{margin:12px 0 0;color:#C9CED4;font-size:16px;line-height:1.6;max-width:560px}
+@media (max-width:640px){.cta{margin:80px 24px 64px;padding:40px 28px}}
+</style>
+<link rel="stylesheet" href="/mc-motion.css">
+<meta property="article:published_time" content="2026-11-23">
+<meta property="article:modified_time" content="2026-11-23">
+<meta property="article:section" content="Industries">
+</head>
+<body style="margin:0;font-family:'Inter',system-ui,sans-serif;color:#0A0B0D;-webkit-font-smoothing:antialiased">
+<div id="mc-app"><div>
+<header style="position:sticky;top:0;z-index:30;background:rgba(255,255,255,0.86);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid #EEEFF1">
+<nav aria-label="Primary" style="max-width:1200px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+<a href="/" aria-label="Mission Control home" style="display:inline-flex;align-items:center"><img src="/media/mission-control-logo.svg" alt="Mission Control" style="height:22px;width:auto;display:block"></a>
+<div class="navlinks" style="display:flex;gap:30px;font-size:14px;font-weight:500;color:#5B616B;align-items:center">
+<a class="nl" href="/platform">Platform</a>
+<a class="nl" href="/how-we-work">How we work</a>
+<a class="nl" href="/industries">Industries</a>
+<a class="nl" href="/security">Security</a>
+<a class="nl" href="/company">Company</a>
+<a class="nl" href="/news" aria-current="page" style="color:#0A0B0D">Newsroom</a>
+</div>
+<div style="display:flex;align-items:center;gap:10px">
+<details class="mnav"><summary aria-label="Open menu">Menu</summary><div class="mnav-p"><a href="/platform">Platform</a><a href="/how-we-work">How we work</a><a href="/industries">Industries</a><a href="/security">Security</a><a href="/company">Company</a><a href="/news">Newsroom</a></div></details>
+<a href="/briefing" class="b1" style="display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:8px;background:#0A0B0D;color:#FFFFFF;font-size:14px;font-weight:500">Book a briefing</a>
+</div>
+</nav>
+</header>
+<main>
+<section><div class="wrap" style="padding-top:72px">
+<nav class="crumb" aria-label="Breadcrumb"><a href="/news">Newsroom</a><span aria-hidden="true">/</span><span>Industries</span></nav>
+<h1 class="d h1">The month-end close is slow because work waits, not accountants</h1>
+<p class="lead">Most close days are spent waiting for late inputs, approvals and rework, not on accounting work. Map the close as a dependency network and fix the flow before buying software or AI.</p>
+<div class="meta"><span>By the Mission Control team</span><time datetime="2026-11-23">23 November 2026</time><span>8 min read</span></div>
+<div class="hero-art"><img src="/news/img/month-end-close-waiting-not-working.svg" alt="" width="1600" height="900"></div>
+</div></section>
+<article class="art">
+<div class="tldr">
+<h2>Key points</h2>
+<ul>
+<li>APQC's open benchmark puts the median time to complete monthly consolidated statements at 6 calendar days. That figure counts elapsed time, including waiting.</li>
+<li>When finance teams are asked what slows the close, the most common answer is waiting: for data, for other departments, for systems. Few blame the speed of the accounting work itself.</li>
+<li>Most close data comes from vendor surveys with small or undisclosed samples. Treat the percentages as directional, but the pattern is consistent across a decade of them.</li>
+<li>AI and close software only shorten the close if they act on the critical path. Automating a step that was never the constraint changes little.</li>
+<li>Map the close as a dependency network, measure waiting against working at each step, find the critical path, then fix hand-offs before buying anything.</li>
+</ul>
+</div>
+
+<p>Ask a controller why the close takes eight days and you rarely hear "because reconciliations take eight days of effort." You hear that payroll was late, a project manager had not approved the accrual, the bank feed broke, or the partner who signs off was travelling. The accountants were ready. The inputs were not.</p>
+
+<p>That distinction matters because most fixes on the market are aimed at the wrong problem. Close management software, reconciliation tools and now AI agents promise to make accounting work faster. In most services organisations the accounting work is not where the days go. They go in the gaps between steps.</p>
+
+<p>This applies to in-house finance teams and to accounting firms running monthly close or bookkeeping for clients.</p>
+
+<h2>How long the close takes, and what the number hides</h2>
+
+<p>The most widely used benchmark comes from APQC. Across 10,198 organisations, its <a href="https://www.apqc.org/resources/benchmarking/open-standards-benchmarking/measures/cycle-time-days-complete-monthly" target="_blank" rel="noopener">median cycle time to complete monthly consolidated financial statements is 6.0 days</a>. The definition is worth reading closely: calendar days, including weekends, from the first trial balance to agreed consolidated statements. For finance shared services centres, APQC's <a href="https://www.apqc.org/what-we-do/benchmarking/open-standards-benchmarking/measures/cycle-time-days-finance-shared" target="_blank" rel="noopener">median to complete the monthly close is 8.0 days</a> across 3,123 organisations.</p>
+
+<p>These are elapsed times. They include every hour a reconciliation sat untouched, waiting for a statement or a sign-off.</p>
+
+<p>Vendor surveys tell a similar story with more spread. A 2025 benchmark from Ledge, a finance software company, surveyed 100 finance professionals and found <a href="https://ledge.co/content/month-end-close-benchmarks-for-2025" target="_blank" rel="noopener">half of teams take six or more business days</a>, with only 18 per cent closing in three days or less. A May 2026 report from LiveFlow, another vendor, found <a href="https://www.cfodive.com/news/cfo-push-faster-month-end-close-stalled-data-bottlenecks-ai/819283/" target="_blank" rel="noopener">16 per cent of respondents take more than 10 days</a>. LiveFlow did not disclose its sample size. Both firms sell close tooling, so read the numbers as indicative, not definitive.</p>
+
+<h2>Where the days actually go</h2>
+
+<p>The more useful question is why. The answers line up.</p>
+
+<ul>
+<li><strong>Late inputs from other teams.</strong> In the LiveFlow report, about <a href="https://www.cfodive.com/news/cfo-push-faster-month-end-close-stalled-data-bottlenecks-ai/819283/" target="_blank" rel="noopener">80 per cent blamed close delays on waiting for data from other systems or departments</a>. Ledge found <a href="https://ledge.co/content/month-end-close-benchmarks-for-2025" target="_blank" rel="noopener">56 per cent cited dependence on other departments and regions</a>, the top cause, and quoted one manager: "if even one source is delayed, it pushes back the entire close."</li>
+<li><strong>This is not new.</strong> In 2017 the Journal of Accountancy reported an Adra survey in which <a href="https://www.journalofaccountancy.com/news/2017/may/overtime-stress-common-during-month-end-close-201716585.html" target="_blank" rel="noopener">54 per cent named coordinating and getting information from other departments</a> as a challenge. A FloQast survey of 259 close owners in the same article found 71 per cent relied on undocumented "tribal knowledge."</li>
+<li><strong>Reconciliation rework.</strong> Ledge respondents named reconciling bank, card and processor accounts as the most frequent time sink. LiveFlow found more than half cite reconciling across multiple platforms as a barrier.</li>
+<li><strong>Batching at period end.</strong> EY's record-to-report guidance describes work that is <a href="https://www.ey.com/en_sg/insights/financial-accounting-advisory-services/how-to-transform-record-to-report-to-drive-strategic-value" target="_blank" rel="noopener">heavily manual and concentrated at period end</a>, with critical inputs often not complete and accurate until late in the period. It also warns that treating the close as separate tasks hides "interdependencies, bottlenecks and inefficiencies."</li>
+<li><strong>Approval queues.</strong> Ledge ranked departmental submissions and approvals fifth among time-consuming tasks.</li>
+</ul>
+
+<p>None of these is about how fast an accountant works. They are about when work can start and how long finished work waits.</p>
+
+<h3>For accounting firms running client close</h3>
+
+<p>The pattern is sharper when the inputs belong to a client. In a 2026 report commissioned by HubSync, a vendor to CPA firms, <a href="https://www.cpapracticeadvisor.com/?p=193690" target="_blank" rel="noopener">half of respondents said chasing documents was the operational process consuming the most staff time</a>. Financial Cents' survey of 816 accounting, bookkeeping and tax firm owners found <a href="https://finance.yahoo.com/news/report-says-workflow-remains-top-120429546.html" target="_blank" rel="noopener">getting documents from clients was still the biggest workflow issue</a>. For a bookkeeping practice, the client is the upstream department that is always late.</p>
+
+<h2>Why the close behaves like a queue</h2>
+
+<p>A close is a network of dependent steps. Accruals depend on approved timesheets. Revenue recognition depends on billing. Intercompany depends on both sides posting. Review depends on preparation. The close finishes when the longest chain of dependent steps finishes. That chain is the critical path.</p>
+
+<p>Two consequences follow. First, speeding up a step that is not on the critical path does not shorten the close at all. Second, on most critical paths the elapsed time is dominated by waiting. We covered the general mechanics in <a href="/news/flow-efficiency-services-firms">our piece on flow efficiency</a>: work spends most of its life queued, and queues grow sharply when the people they wait on are near full capacity. Period end is exactly when everyone is near full capacity.</p>
+
+<h2>Why buying software or AI first rarely fixes it</h2>
+
+<p>Finance teams are investing. Gartner's 2025 survey of 183 finance leaders found <a href="https://www.gartner.com/en/newsroom/press-releases/2025-11-18-gartner-survey-shows-finance-ai-adoption-remains-steady-in-2025" target="_blank" rel="noopener">59 per cent of finance functions use AI</a>, but 91 per cent reported low or moderate impact so far. In September 2026 Gartner reported, from a survey of 160 finance leaders, that <a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-24-gartner-says-cfos-must-take-a-more-disciplined-approach" target="_blank" rel="noopener">low AI literacy is now the most significant barrier</a> and urged more deliberate portfolio management of AI spend.</p>
+
+<p>LiveFlow's respondents said AI is mostly applied to analysis and reporting, leaving the manual core of the close largely unchanged. That fits the queue view. An AI tool that drafts variance commentary in minutes saves real effort, but if commentary was waiting two days for the final trial balance, the close still ends on the same day. Automation helps most when it removes a wait on the critical path. We have written about <a href="/news/why-automation-programs-stall">why automation programs stall</a> when this sequencing is skipped.</p>
+
+<h2>The talent squeeze makes waiting more expensive</h2>
+
+<p>The obvious response to a slow close, adding people, is getting harder. The AICPA's 2025 Trends report found <a href="https://www.journalofaccountancy.com/news/2025/oct/the-accounting-graduate-pipeline-where-do-things-stand/" target="_blank" rel="noopener">accounting bachelor's and master's degrees fell 6.6 per cent to 55,152</a> in 2023 to 2024, though enrolment rose 12.4 per cent in spring 2025. The US Bureau of Labor Statistics projects <a href="https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm" target="_blank" rel="noopener">about 115,300 openings a year</a> for accountants and auditors from 2025 to 2035. In Australia, a CA ANZ survey of 159 members found <a href="https://www.accountantsdaily.com.au/business/22301-ca-anz-survey-indicative-of-australia-wide-accountant-auditor-shortages" target="_blank" rel="noopener">only 49 per cent of general accountant vacancies were filled</a>, taking 79 days on average.</p>
+
+<p>When skilled hours are scarce, an hour lost waiting is more costly. Fixing flow is the cheapest capacity a finance team can find.</p>
+
+<h2>A framework: map the close as a dependency network</h2>
+
+<ol>
+<li><strong>List every close step and its inputs.</strong> For each step, name who supplies what, and from which system. Include external inputs: payroll provider, bank, client, project leads.</li>
+<li><strong>Draw the dependencies.</strong> Which steps cannot start until another finishes? This is your network.</li>
+<li><strong>Measure waiting and working per step.</strong> For three recent closes, record when each step could have started, when it actually started, the hands-on hours, and when it finished.</li>
+<li><strong>Find the critical path.</strong> Trace the longest chain of dependent elapsed time from period end to sign-off. Only steps on this path set your close date.</li>
+<li><strong>Rank waits on the critical path.</strong> The largest waits, not the largest tasks, are where to start.</li>
+</ol>
+
+<figure class="callout"><p><strong>Illustrative example.</strong> A 300-person consultancy closes on working day 7. Its critical path runs: timesheet approval (2 days elapsed, 1 hour of work), unbilled revenue accrual (1.5 days, 4 hours), management review (2 days, 3 hours), partner sign-off (1.5 days, 1 hour). Of about 7 working days on the path, roughly 9 hours are hands-on work. Flow efficiency on the critical path is under 20 per cent. A tool that halved accrual effort would save 2 hours. Moving timesheet approval deadlines to the last working day would save up to 2 days.</p></figure>
+
+<h2>Five fixes to try before buying anything</h2>
+
+<ul>
+<li><strong>Pull inputs forward.</strong> Set cut-offs for upstream teams before period end, and agree them as a service level, not a favour. For client close, request documents on a fixed schedule rather than one at a time when needed.</li>
+<li><strong>Reconcile continuously.</strong> Move bank and card reconciliations to weekly or daily so period end only handles the last few days. This is the practical core of continuous accounting.</li>
+<li><strong>Shrink approval queues.</strong> Set materiality thresholds below which a delegate can approve, and give approvers a fixed daily window during close.</li>
+<li><strong>Start steps on partial data.</strong> Many accruals and reviews can begin with estimates and be trued up, so they stop waiting for the last input.</li>
+<li><strong>Write down the tribal knowledge.</strong> Document who supplies each input and what "done" means.</li>
+</ul>
+
+<p>Then re-measure. Once the waits are out, the remaining work is visible, and that is the right moment to decide which steps are worth automating. This is the kind of mapping Mission Control does: measuring how close work moves between people and teams, without reading its contents.</p>
+
+<section class="faq">
+<h2>Questions</h2>
+<h3>How many days should the month-end close take?</h3>
+<p>APQC's open benchmark puts the median time to complete monthly consolidated statements at 6 calendar days, based on more than 10,000 organisations. A better target is your own critical path with its avoidable waits removed, since organisational complexity varies widely.</p>
+<h3>What is the critical path of a financial close?</h3>
+<p>It is the longest chain of dependent steps from period end to final sign-off. Only delays on this chain move the close date, so improvement effort should start there rather than on whichever task takes the most effort.</p>
+<h3>Will AI shorten our month-end close?</h3>
+<p>Only if it removes waiting or rework on the critical path. Gartner's 2025 survey found most finance AI users reported low or moderate impact so far, so map where your close waits before deciding what to automate.</p>
+</section>
+
+<section class="sources">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.apqc.org/resources/benchmarking/open-standards-benchmarking/measures/cycle-time-days-complete-monthly" target="_blank" rel="noopener">APQC, Cycle time in days to complete the monthly consolidated financial statements (open standards benchmark)</a></li>
+<li><a href="https://www.apqc.org/what-we-do/benchmarking/open-standards-benchmarking/measures/cycle-time-days-finance-shared" target="_blank" rel="noopener">APQC, Cycle time in days for finance shared services center to complete the monthly financial close</a></li>
+<li><a href="https://ledge.co/content/month-end-close-benchmarks-for-2025" target="_blank" rel="noopener">Ledge, Month-end close benchmarks for 2025 (vendor survey)</a></li>
+<li><a href="https://www.cfodive.com/news/cfo-push-faster-month-end-close-stalled-data-bottlenecks-ai/819283/" target="_blank" rel="noopener">CFO Dive, Data bottlenecks stall CFOs' push for faster month-end close (2026, reporting LiveFlow vendor survey)</a></li>
+<li><a href="https://www.journalofaccountancy.com/news/2017/may/overtime-stress-common-during-month-end-close-201716585.html" target="_blank" rel="noopener">Journal of Accountancy, Overtime, stress common during month-end close (2017)</a></li>
+<li><a href="https://www.ey.com/en_sg/insights/financial-accounting-advisory-services/how-to-transform-record-to-report-to-drive-strategic-value" target="_blank" rel="noopener">EY, How to transform record-to-report to drive strategic value</a></li>
+<li><a href="https://www.cpapracticeadvisor.com/?p=193690" target="_blank" rel="noopener">CPA Practice Advisor, Report shows operational challenges facing CPA firms (2026, HubSync vendor report)</a></li>
+<li><a href="https://finance.yahoo.com/news/report-says-workflow-remains-top-120429546.html" target="_blank" rel="noopener">The Accountant via Yahoo Finance, Report says workflow remains top challenge for accounting firms (2025)</a></li>
+<li><a href="https://www.gartner.com/en/newsroom/press-releases/2025-11-18-gartner-survey-shows-finance-ai-adoption-remains-steady-in-2025" target="_blank" rel="noopener">Gartner, Survey shows finance AI adoption remains steady in 2025 (2025)</a></li>
+<li><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-24-gartner-says-cfos-must-take-a-more-disciplined-approach" target="_blank" rel="noopener">Gartner, CFOs must take a more disciplined approach to finance AI investment (2026)</a></li>
+<li><a href="https://www.journalofaccountancy.com/news/2025/oct/the-accounting-graduate-pipeline-where-do-things-stand/" target="_blank" rel="noopener">Journal of Accountancy, The accounting graduate pipeline: where do things stand? (2025)</a></li>
+<li><a href="https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm" target="_blank" rel="noopener">US Bureau of Labor Statistics, Occupational Outlook Handbook: Accountants and auditors</a></li>
+<li><a href="https://www.accountantsdaily.com.au/business/22301-ca-anz-survey-indicative-of-australia-wide-accountant-auditor-shortages" target="_blank" rel="noopener">Accountants Daily, CA ANZ survey indicative of Australia-wide accountant, auditor shortages (2026)</a></li>
+</ol>
+</section>
+
+<p style="margin-top:40px;font-size:14px;color:#8A9099">Published 23 November 2026. This article is general information, not legal, financial or professional advice.</p>
+</article>
+<section aria-label="Related reading"><div class="wrap" style="padding-top:96px"><h2 class="d" style="margin:0 0 28px;font-weight:500;font-size:28px;letter-spacing:-0.02em">Keep reading</h2><div class="grid"><a class="card mv-card" href="/news/ai-agents-fail-at-the-handoff" data-cat="Automation"><img src="/news/img/ai-agents-fail-at-the-handoff.svg" alt="" loading="lazy" width="1600" height="900"><div class="ci"><span class="eyb">Automation</span><span class="ct">AI agents rarely fail at the task. They fail at the hand-off</span><span class="cd">Agent projects in services operations stall where work moves between the agent, people and systems. Design the hand-off before you design the agent.</span><span class="cm"><time datetime="2026-11-23">23 November 2026</time><span>8 min read</span></span></div></a><a class="card mv-card" href="/news/process-drift-playbook" data-cat="Playbooks"><img src="/news/img/process-drift-playbook.svg" alt="" loading="lazy" width="1600" height="900"><div class="ci"><span class="eyb">Playbooks</span><span class="ct">Process drift: closing the gap between the SOP and the real work</span><span class="cd">Every documented process drifts from how work is really done. Here is a step-by-step playbook to find the gap, sort good drift from bad, and close it on a fixed cadence.</span><span class="cm"><time datetime="2026-11-23">23 November 2026</time><span>8 min read</span></span></div></a><a class="card mv-card" href="/news/cost-of-rework-services" data-cat="Finance"><img src="/news/img/cost-of-rework-services.svg" alt="" loading="lazy" width="1600" height="900"><div class="ci"><span class="eyb">Finance</span><span class="ct">The cost of rework: the biggest line your P&amp;L never shows</span><span class="cd">Corrections, re-requests, returned files and write-offs add up to a cost most services firms never see as one number. Measure first pass yield by workflow, then price it.</span><span class="cm"><time datetime="2026-11-23">23 November 2026</time><span>8 min read</span></span></div></a></div></div></section>
+<section class="cta" aria-label="Book a briefing"><div><h2>See how work really moves through your organisation.</h2><p>A 30-minute briefing with our team. We walk through a live map and tell you plainly whether Mission Control is a fit.</p></div>
+<a href="/briefing" class="bw" style="display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 20px;border-radius:8px;background:#FFFFFF;color:#0A0B0D;font-size:15px;font-weight:500">Book a briefing <span class="ar" aria-hidden="true">→</span></a></section>
+</main>
+<footer style="border-top:1px solid #EEEFF1">
+<div style="max-width:1200px;margin:0 auto;padding:56px 24px 32px">
+<div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
+<div style="flex:1 1 260px;max-width:320px"><img src="/media/mission-control-logo.svg" alt="Mission Control" style="height:22px;width:auto;display:block"><p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:#5B616B">Operational intelligence for services organisations.</p></div>
+<div style="flex:2 1 480px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(140px,100%),1fr));gap:28px;font-size:14px">
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Platform</span><a class="nl" href="/platform" style="color:#5B616B">Overview</a><a class="nl" href="/platform#map" style="color:#5B616B">Live map</a><a class="nl" href="/platform#automations" style="color:#5B616B">Automations</a><a class="nl" href="/platform#connect" style="color:#5B616B">Connections</a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Solutions</span><a class="nl" href="/industries" style="color:#5B616B">Industries</a><a class="nl" href="/how-we-work" style="color:#5B616B">How we work</a><a class="nl" href="/industries#roadmap" style="color:#5B616B">Roadmap</a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Company</span><a class="nl" href="/company" style="color:#5B616B">About</a><a class="nl" href="/security" style="color:#5B616B">Security</a><a class="nl" href="/news" style="color:#5B616B">Newsroom</a><a class="nl" href="/briefing" style="color:#5B616B">Book a briefing</a><a class="nl" href="mailto:hello@missioncntrl.io" style="color:#5B616B">hello@missioncntrl.io</a></div>
+</div></div>
+<div style="margin-top:48px;padding-top:20px;border-top:1px solid #EEEFF1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:#8A9099"><span>© 2026 Mission Control. All rights reserved.</span><span style="display:flex;gap:18px"><a class="nl" href="/privacy">Privacy</a><a class="nl" href="/terms">Terms</a><a class="nl" href="/news/feed.xml">RSS</a></span></div>
+</div></footer>
+</div></div>
+<script src="/mc-motion.js" defer></script>
+</body>
+</html>
