@@ -37,6 +37,7 @@ a:hover .ar,button:hover .ar{transform:translateX(3px)}
 .fade{animation:fade 360ms cubic-bezier(0.32,0.72,0,1) both}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 .live{animation:pulse 2s ease-in-out infinite}
+.mnav{display:none;position:relative}.mnav>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;height:38px;padding:0 12px;border:1px solid #DADCE0;border-radius:8px;font-size:14px;font-weight:500;color:#0A0B0D}.mnav>summary::-webkit-details-marker{display:none}.mnav[open]>summary{border-color:#0A0B0D}.mnav-p{position:absolute;right:0;top:46px;min-width:220px;background:#FFFFFF;border:1px solid #EEEFF1;border-radius:12px;box-shadow:0 24px 48px -24px rgba(10,11,13,0.25);padding:8px;display:flex;flex-direction:column}.mnav-p a{padding:10px 12px;border-radius:8px;font-size:15px;color:#0A0B0D}.mnav-p a:hover{background:#F5F6F7}.mnav summary:focus-visible{outline:2px solid #0A0B0D;outline-offset:2px}@media (max-width:980px){.mnav{display:block}}
 @media (max-width:980px){.navlinks{display:none !important}.signin{display:none !important}.side{display:none !important}}
 @media (prefers-reduced-motion:reduce){.fade,.live{animation:none}}
 </style>
@@ -45,9 +46,9 @@ a:hover .ar,button:hover .ar{transform:translateX(3px)}
 <header style="position:sticky;top:0;z-index:30;background:rgba(255,255,255,0.86);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid #EEEFF1">
 <nav aria-label="Primary" style="max-width:1200px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px">
 <a href="Home-V3.dc.html" aria-label="Mission Control home" style="display:inline-flex;align-items:center"><img src="/_blob/5f444ae733218df8443956ffe7496978" alt="Mission Control" style="height:22px;width:auto;display:block"></a>
-<div class="navlinks" style="display:flex;gap:30px;font-size:14px;font-weight:500;align-items:center"><a class="nl" href="Platform-V3.dc.html" style="color:#5B616B">Platform</a><a class="nl" href="HowWeWork-V3.dc.html" style="color:#5B616B">How we work</a><a class="nl" href="Industries-V3.dc.html" aria-current="page" style="color:#0A0B0D">Industries</a><a class="nl" href="Security-V3.dc.html" style="color:#5B616B">Security</a><a class="nl" href="Company-V3.dc.html" style="color:#5B616B">Company</a></div>
-<div style="display:flex;align-items:center;gap:18px">
-<a class="nl signin" href="#" style="font-size:14px;font-weight:500;color:#5B616B">Sign in</a>
+<div class="navlinks" style="display:flex;gap:30px;font-size:14px;font-weight:500;align-items:center"><a class="nl" href="Platform-V3.dc.html" style="color:#5B616B">Platform</a><a class="nl" href="HowWeWork-V3.dc.html" style="color:#5B616B">How we work</a><a class="nl" href="Industries-V3.dc.html" aria-current="page" style="color:#0A0B0D">Industries</a><a class="nl" href="Security-V3.dc.html" style="color:#5B616B">Security</a><a class="nl" href="Company-V3.dc.html" style="color:#5B616B">Company</a><a class="nl" href="/news" style="color:#5B616B">Newsroom</a></div>
+<div style="display:flex;align-items:center;gap:10px">
+<details class="mnav"><summary aria-label="Open menu">Menu</summary><div class="mnav-p"><a href="Platform-V3.dc.html">Platform</a><a href="HowWeWork-V3.dc.html">How we work</a><a href="Industries-V3.dc.html">Industries</a><a href="Security-V3.dc.html">Security</a><a href="Company-V3.dc.html">Company</a><a href="/news">Newsroom</a></div></details>
 <a href="Briefing-V3.dc.html" class="b1" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:8px;background:#0A0B0D;color:#FFFFFF;font-size:14px;font-weight:500">Book a briefing</a>
 </div>
 </nav>
@@ -119,9 +120,9 @@ a:hover .ar,button:hover .ar{transform:translateX(3px)}
 <div style="flex:2 1 480px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(140px,100%),1fr));gap:28px;font-size:14px">
 <div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Platform</span><a class="nl" href="Platform-V3.dc.html" style="color:#5B616B">Overview</a><a class="nl" href="Platform-V3.dc.html#map" style="color:#5B616B">Live map</a><a class="nl" href="Platform-V3.dc.html#automations" style="color:#5B616B">Automations</a><a class="nl" href="Platform-V3.dc.html#connect" style="color:#5B616B">Connections</a></div>
 <div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Solutions</span><a class="nl" href="Industries-V3.dc.html" style="color:#5B616B">Industries</a><a class="nl" href="HowWeWork-V3.dc.html" style="color:#5B616B">How we work</a><a class="nl" href="Industries-V3.dc.html#roadmap" style="color:#5B616B">Roadmap</a></div>
-<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Company</span><a class="nl" href="Company-V3.dc.html" style="color:#5B616B">About</a><a class="nl" href="Security-V3.dc.html" style="color:#5B616B">Security</a><a class="nl" href="Briefing-V3.dc.html" style="color:#5B616B">Book a briefing</a><a class="nl" href="mailto:hello@missioncntrl.io" style="color:#5B616B">hello@missioncntrl.io</a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:600">Company</span><a class="nl" href="Company-V3.dc.html" style="color:#5B616B">About</a><a class="nl" href="Security-V3.dc.html" style="color:#5B616B">Security</a><a class="nl" href="/news" style="color:#5B616B">Newsroom</a><a class="nl" href="Briefing-V3.dc.html" style="color:#5B616B">Book a briefing</a><a class="nl" href="mailto:hello@missioncntrl.io" style="color:#5B616B">hello@missioncntrl.io</a></div>
 </div></div>
-<div style="margin-top:48px;padding-top:20px;border-top:1px solid #EEEFF1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:#8A9099"><span>© 2026 Mission Control</span><span style="display:flex;gap:18px"><a class="nl" href="#">Privacy</a><a class="nl" href="#">Terms</a></span></div>
+<div style="margin-top:48px;padding-top:20px;border-top:1px solid #EEEFF1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:#8A9099"><span>© 2026 Mission Control. All rights reserved.</span><span style="display:flex;gap:18px"><a class="nl" href="/privacy">Privacy</a><a class="nl" href="/terms">Terms</a><a class="nl" href="/news/feed.xml">RSS</a></span></div>
 </div></footer>
 </div>
 </x-dc>

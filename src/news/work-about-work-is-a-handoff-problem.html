@@ -1,0 +1,96 @@
+<div class="tldr">
+<h2>Key points</h2>
+<ul>
+<li>Large surveys put "work about work" at roughly 55 to 60 per cent of a knowledge worker's week. The figure has barely moved in years, despite more collaboration software than ever.</li>
+<li>Most of that time is spent at the hand-offs between people and teams: chasing status, searching for what the last person did, and re-explaining context.</li>
+<li>Asking people to focus harder does not fix a design problem. Making the state of each piece of work visible at the hand-off does.</li>
+<li>Do not ask people where their time goes. Measure where the work waits, using the timestamps your systems already record.</li>
+</ul>
+</div>
+
+<p>Every few years another study confirms what operators already feel: most of the working week is not spent doing the work. Asana's <a href="https://www.businesswire.com/news/home/20220405005399/en/5182748/Asana-Anatomy-of-Work-Index-2022-Work-About-Work-Hampering-Organizational-Agility">Anatomy of Work Index 2022</a> surveyed 10,624 knowledge workers across Australia, France, Germany, Japan, Singapore, the UK and the US. It found that employees at medium and large companies spend 59 per cent of their day on what it calls work about work. The <a href="https://asana.com/resources/anz-anatomy-of-work-infographic">2021 Australia and New Zealand cut</a> put the local figure at 58 per cent. The <a href="https://asana.com/resources/uk-anatomy-of-work-infographic">UK figure</a> was 61 per cent.</p>
+
+<p>Microsoft reached a similar conclusion from a different direction. Its <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work">2023 Work Trend Index</a> analysed signals from Microsoft 365. It found the average person spends 57 per cent of their time in that software communicating (meetings, chat and email) and 43 per cent creating. In the same report, 68 per cent of people said they lack enough uninterrupted focus time.</p>
+
+<p>The usual response is a new tool, a no-meeting day or a focus campaign. We think that misreads the problem. Work about work is mostly not a personal productivity failure. It is what an organisation pays for hand-offs nobody designed.</p>
+
+<h2>What the surveys are really measuring</h2>
+
+<p>Look at what falls under "work about work": status updates, searching for information, switching between apps, chasing approvals, duplicated effort. Almost none of it happens inside one person's task. It happens at the moments work changes hands.</p>
+
+<p>The McKinsey Global Institute's <a href="https://www.mckinsey.com/industries/high-tech/our-insights/the-social-economy">2012 analysis</a> estimated that the average interaction worker spends 28 per cent of the week managing email. It put nearly 20 per cent on looking for internal information or tracking down colleagues who can help. That second number describes a hand-off failure. Someone needed what a previous step produced, and could not find it or the person who held it.</p>
+
+<p>Research on attention points the same way. Gloria Mark and colleagues at the University of California, Irvine <a href="https://news.gallup.com/businessjournal/23146/too-many-interruptions-work.aspx">shadowed 36 knowledge workers</a>, timing every event to the second. On average people juggled 12.2 separate "working spheres" a day. They switched between them roughly every ten and a half minutes. Much of that switching is driven by other people's dependencies arriving unannounced.</p>
+
+<p>Treat these figures with care. They come from self-reported surveys, vendor telemetry and older estimates, and they do not agree on method. What matters is that every method lands in the same place: well over half the week goes on coordination. That consistency is the finding.</p>
+
+<h2>Why the hand-off is where time disappears</h2>
+
+<p>Think about a typical services workflow: a new client is onboarded, an engagement is scoped, a matter is opened, a claim is assessed. On paper it is five or six steps. In practice each step ends with a hand-off. And each hand-off has three hidden costs.</p>
+
+<ul>
+<li><strong>Waiting.</strong> The work sits in someone's queue, or in an inbox, until they notice it. Nobody is doing anything wrong. The work is simply idle.</li>
+<li><strong>Re-establishing context.</strong> The next person has to work out what was done, what is missing and what the client asked for. Some of that is searching. Some of it is a message back to the person who just handed it over.</li>
+<li><strong>Status chasing.</strong> Because nobody can see where the work is, managers and clients ask. Each question interrupts someone who is in the middle of something else.</li>
+</ul>
+
+<p>None of these show up as "work" in a timesheet. All of them show up as elapsed time for the client and as fatigue for the team. And they multiply with every hand-off. A process that touches seven people has six seams, each leaking a little time.</p>
+
+<h2>Why the usual fixes underdeliver</h2>
+
+<p><strong>More collaboration tools.</strong> Most organisations already have too many places where status can live: email, chat, a practice management system, a CRM, a spreadsheet someone built in 2019. Another channel adds one more place to look. The problem was never a lack of ways to talk. It was that the state of the work was not recorded where the next person would find it.</p>
+
+<p><strong>Focus campaigns.</strong> Protecting deep work is good for individuals. But if a case cannot move until three people have each looked at it, protecting their focus time can make the case slower. Reducing interruptions only helps when you also reduce the reasons for them.</p>
+
+<p><strong>Asking people where their time goes.</strong> Time surveys and workshops tell you what people remember and what they think matters. They are poor at recovering wait time, which by definition nobody experiences as work. A step that "takes ten minutes" can routinely sit for three days before anyone starts it.</p>
+
+<h2>A better approach: measure the hand-offs</h2>
+
+<p>The practical alternative is to study the work item instead of the worker. Pick one workflow that matters commercially. Then trace individual cases through it using the timestamps your systems already record. This is the core idea behind <a href="https://en.wikipedia.org/wiki/Process_mining">process mining</a>, a field built on event logs. Each event carries a case identifier, an activity and a timestamp.</p>
+
+<p>For a first pass, four measures do most of the work:</p>
+
+<ol>
+<li><strong>Hand-offs per case.</strong> How many times does a typical case change hands, and how much does that vary? Outliers usually point to unclear ownership.</li>
+<li><strong>Wait time per hand-off.</strong> How long does work sit between one person finishing and the next starting? This is usually where most of the elapsed time is.</li>
+<li><strong>Rework loops.</strong> How often does a case go backwards to a step it has already passed? Each loop is a hand-off that failed to carry enough context.</li>
+<li><strong>Path variety.</strong> How many different routes do cases take in practice, compared with the one route in the procedure manual?</li>
+</ol>
+
+<p>You need a few hundred cases at most to see the pattern. You do not need to watch anyone's screen. Timestamps on records, status changes and assignments are enough to show where work waits. (We cover how to do this without monitoring individuals in <a href="/news/map-work-without-monitoring-people">a separate piece</a>.)</p>
+
+<h2>What to do with what you find</h2>
+
+<p>Once hand-offs are visible, the fixes tend to be unglamorous and effective:</p>
+
+<ul>
+<li><strong>Remove a hand-off entirely</strong> where two steps can be done by one role. This is usually the cheapest improvement available.</li>
+<li><strong>Standardise what travels with the work</strong> so the next person starts with context rather than a question. A short, required set of fields at each hand-off often beats a long procedure document.</li>
+<li><strong>Make the state of each case visible</strong> to the people who chase it, so status questions stop being asked.</li>
+<li><strong>Automate the transfer, not just the task.</strong> The most valuable automations often move information between systems at a hand-off, rather than speeding up a step that was never the delay.</li>
+</ul>
+
+<p>The mistake is to treat work about work as an individual habit to be coached away. It is a property of how the organisation passes work around. That makes it measurable, and fixable, by the people accountable for how the business runs.</p>
+
+<section class="faq">
+<h2>Questions</h2>
+<h3>What is "work about work"?</h3>
+<p>It is time spent coordinating work rather than doing it: status updates, searching for information, switching between tools, chasing approvals and duplicating effort. Asana's Anatomy of Work research popularised the term. Its 2022 survey found that employees at medium and large companies spend 59 per cent of their day on it.</p>
+<h3>Why is work about work so hard to reduce?</h3>
+<p>Because most of it happens at the hand-offs between people and teams, not inside any one person's task. Individual productivity tactics do not change how work is passed between roles. Changing hand-offs requires seeing them, and most organisations have no measure of them.</p>
+<h3>How do you measure hand-offs without surveying staff?</h3>
+<p>Use the timestamps that business systems already record when a case is created, assigned, updated or closed. Tracing a few hundred cases shows how many hand-offs each case has, how long work waits between them and how often it loops back.</p>
+</section>
+
+<section class="sources">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.businesswire.com/news/home/20220405005399/en/5182748/Asana-Anatomy-of-Work-Index-2022-Work-About-Work-Hampering-Organizational-Agility">Asana, Anatomy of Work Index 2022 (Business Wire release)</a></li>
+<li><a href="https://asana.com/resources/anz-anatomy-of-work-infographic">Asana, Anatomy of Work Index 2021: Australia and New Zealand findings</a></li>
+<li><a href="https://asana.com/resources/uk-anatomy-of-work-infographic">Asana, Anatomy of Work Index 2021: UK findings</a></li>
+<li><a href="https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work">Microsoft, 2023 Work Trend Index: Will AI fix work?</a></li>
+<li><a href="https://www.mckinsey.com/industries/high-tech/our-insights/the-social-economy">McKinsey Global Institute, The social economy (2012)</a></li>
+<li><a href="https://news.gallup.com/businessjournal/23146/too-many-interruptions-work.aspx">Gallup Business Journal, interview with Gloria Mark on workplace interruptions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Process_mining">Process mining overview</a></li>
+</ol>
+</section>

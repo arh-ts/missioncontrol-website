@@ -1,0 +1,93 @@
+<div class="tldr">
+<h2>Key points</h2>
+<ul>
+<li>Flow efficiency is the share of a case's elapsed time spent actively working on it. The rest is waiting.</li>
+<li>Practitioners commonly report figures in the 5 to 15 per cent range for knowledge work. No rigorous benchmark exists, but even generous estimates leave most elapsed time as waiting.</li>
+<li>Little's Law shows why: with demand held steady, the average time a case takes rises in direct proportion to how much work is open at once.</li>
+<li>High utilisation targets make waiting worse, not better. Queues grow sharply as people approach full capacity.</li>
+<li>The fastest way to deliver sooner is usually to cut waiting, not to make people work faster.</li>
+</ul>
+</div>
+
+<p>Ask a team how long it takes to onboard a client and you will usually get two answers. The work takes a few hours. The onboarding takes two weeks. The gap between those numbers is where most services businesses quietly lose speed, margin and client goodwill. It has a name: flow efficiency.</p>
+
+<h2>What flow efficiency is</h2>
+
+<p>Flow efficiency is a simple ratio. Divide the time someone spent actively working on a case by the total elapsed time from start to finish:</p>
+
+<figure class="callout"><p><strong>Flow efficiency = active time ÷ total elapsed time</strong></p><p>A matter that receives six hours of actual work across ten working days (80 working hours) has a flow efficiency of 7.5 per cent. For the other 92.5 per cent of the time it was waiting.</p></figure>
+
+<p>The idea comes from lean operations. It was popularised for knowledge work by Niklas Modig and Pär Åhlström, who contrast <em>resource efficiency</em> (keeping people busy) with <em>flow efficiency</em> (keeping work moving). <a href="https://www.scrum.org/resources/blog/business-efficiency-watch-ball-not-player">One practitioner summary</a> puts the shift well: watch the ball, not the player. In knowledge work what matters most is what is happening to the work, not what the workers are doing.</p>
+
+<h2>How low is it, really?</h2>
+
+<p>Figures in the 5 to 15 per cent range are widely quoted. ASOS's engineering team <a href="https://medium.com/asos-techblog/our-survey-says-uncovering-the-real-numbers-behind-flow-efficiency-e54f136b1fab">collected the common claims</a>: most teams sit between 5 and 15 per cent, some as low as 2 per cent, and about 40 per cent after much effort. The same team made an important point in a <a href="https://medium.com/asos-techblog/the-many-flaws-in-flow-efficiency-bc7845ba4c9">companion piece</a>. They could not find a single rigorous study that validates these "typical" percentages.</p>
+
+<p>We agree with that caution, and it does not change the conclusion. You do not need a precise industry benchmark to act. Even if your real figure were three times higher than the commonly quoted range, most of each case's life would still be spent waiting. The question worth answering is not "what is normal?" It is "where does our work wait, and why?"</p>
+
+<h2>Little's Law: why open work equals slow work</h2>
+
+<p>In 1961 John Little published <a href="https://econpapers.repec.org/RePEc:inm:oropre:v:9:y:1961:i:3:p:383-387">a proof of the queuing formula L = λW</a>. It is now known as Little's Law. In plain terms: the average number of items in a system equals the average arrival rate multiplied by the average time each item spends in the system. Little later <a href="https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf">reflected on its practical reach</a> in a 50th-anniversary paper.</p>
+
+<p>Rearranged, it says something every operations leader should keep in mind:</p>
+
+<figure class="callout"><p><strong>Average time per case = work in progress ÷ throughput</strong></p><p>Illustrative example: a team completes 40 matters a week and has 200 open. The average matter takes about five weeks. If the same team, doing the same work at the same pace, holds 100 matters open instead of 200, the average falls to about two and a half weeks.</p></figure>
+
+<p>The law describes long-run averages in a reasonably stable system, so treat it as a guide rather than a stopwatch. But the direction is reliable. Starting more work than you finish does not make you faster. It makes every case slower, because each one spends longer queued behind the others.</p>
+
+<h2>Why "everyone at full utilisation" backfires</h2>
+
+<p>Professional services firms are built around utilisation: billable hours, chargeable time, capacity plans that aim to keep everyone busy. That makes sense for cost. It is damaging for flow.</p>
+
+<p>Queuing theory has shown for decades that waiting time does not rise in a straight line as utilisation rises. It climbs slowly at first, then very sharply as resources approach full capacity, and more so when work arrives unevenly. <a href="https://en.wikipedia.org/wiki/Kingman%27s_formula">Kingman's formula</a> is the standard approximation. In a services team the arrivals are client requests, and the variability is everything that makes services work hard to predict. A team planned to run at 95 per cent will have long queues almost by design.</p>
+
+<p>Don Reinertsen made this argument for product development in <a href="https://www.goodreads.com/en/book/show/6278270-the-principles-of-product-development-flow"><em>The Principles of Product Development Flow</em></a>. His point applies directly to services. In knowledge work, inventory is information. It is invisible, so queues go unmanaged. You cannot walk the floor and see half-finished matters stacked against a wall. They sit in inboxes and systems, and the only symptom is that everything takes longer than it should.</p>
+
+<h2>Where waiting hides in services work</h2>
+
+<p>When teams first measure flow, the waiting usually clusters in a few familiar places:</p>
+
+<ul>
+<li><strong>Approvals.</strong> A review or sign-off step owned by one senior person who is, quite reasonably, busy with other things.</li>
+<li><strong>Specialist queues.</strong> Work that only one team or person can do, such as compliance, tax or conflicts checks, and that everyone else is waiting on.</li>
+<li><strong>Waiting on the client.</strong> Missing documents and unanswered questions. Some of this is outside your control. More of it than you expect is caused by asking for things late or one at a time.</li>
+<li><strong>Batching.</strong> Work that is held until "we do those on Thursdays", so a case finished on Friday waits six days for the next batch.</li>
+<li><strong>Hand-offs between systems.</strong> Information re-keyed from email into a practice system, or from a CRM into billing, whenever someone gets to it.</li>
+</ul>
+
+<p>Separating internal waiting from client waiting matters. It stops a team blaming clients for delays it created, and it shows which delays are worth automating.</p>
+
+<h2>How to measure your own flow efficiency</h2>
+
+<ol>
+<li><strong>Pick one workflow</strong> with a clear start and finish that clients or revenue depend on: onboarding, new matters, claims, monthly close.</li>
+<li><strong>Define its states</strong> as they exist in your systems: created, assigned, in progress, waiting on client, in review, complete.</li>
+<li><strong>Pull timestamps</strong> for a few hundred recent cases from the systems where those state changes are recorded.</li>
+<li><strong>Classify time as active or waiting.</strong> Start with system states. They will be imperfect. That is fine for a first pass, as long as you are consistent.</li>
+<li><strong>Find the biggest queue,</strong> not the slowest step. The step with the most work waiting in front of it is usually the constraint on the whole flow.</li>
+</ol>
+
+<p>Then resist the instinct to speed up the work at that step. First ask why work waits there, and whether you can start less, batch less or remove the hand-off. Making people faster is hard. Making work wait less is usually much easier, and it moves the number clients actually experience.</p>
+
+<section class="faq">
+<h2>Questions</h2>
+<h3>What is flow efficiency?</h3>
+<p>Flow efficiency is the percentage of a work item's total elapsed time during which someone is actively working on it. If a case takes ten working days end to end but receives one working day of actual effort, its flow efficiency is 10 per cent.</p>
+<h3>What is a good flow efficiency for knowledge work?</h3>
+<p>There is no rigorously validated benchmark. Practitioners often cite 5 to 15 per cent as typical and around 40 per cent as very good. It is more useful to track your own figure over time and find where your work waits than to chase an external number.</p>
+<h3>How does Little's Law apply to services businesses?</h3>
+<p>Little's Law says average time in a system equals work in progress divided by throughput. For a services team, holding fewer cases open at once, without changing how fast cases are worked, lowers the average time each case takes.</p>
+</section>
+
+<section class="sources">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://econpapers.repec.org/RePEc:inm:oropre:v:9:y:1961:i:3:p:383-387">Little, J. D. C. (1961). A proof for the queuing formula: L = λW. Operations Research.</a></li>
+<li><a href="https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf">Little, J. D. C. (2011). Little's Law as viewed on its 50th anniversary. Operations Research.</a></li>
+<li><a href="https://medium.com/asos-techblog/our-survey-says-uncovering-the-real-numbers-behind-flow-efficiency-e54f136b1fab">ASOS Tech, Uncovering the real numbers behind flow efficiency</a></li>
+<li><a href="https://medium.com/asos-techblog/the-many-flaws-in-flow-efficiency-bc7845ba4c9">ASOS Tech, The many flaws of flow efficiency</a></li>
+<li><a href="https://www.scrum.org/resources/blog/business-efficiency-watch-ball-not-player">Scrum.org, Business efficiency: watch the ball, not the player</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kingman%27s_formula">Kingman's formula (queueing theory)</a></li>
+<li><a href="https://www.goodreads.com/en/book/show/6278270-the-principles-of-product-development-flow">Reinertsen, D. G. (2009). The Principles of Product Development Flow.</a></li>
+</ol>
+</section>

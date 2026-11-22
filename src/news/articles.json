@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "work-about-work-is-a-handoff-problem",
+    "cat": "Operations",
+    "title": "Work about work is a hand-off problem, not a people problem",
+    "dek": "Surveys keep finding that more than half the week goes on coordination. The cause is not individual habits. It is the hand-offs nobody designed.",
+    "description": "Why 'work about work' takes more than half of the knowledge worker's week, why focus campaigns and new tools underdeliver, and how to measure the hand-offs where time really disappears.",
+    "date": "2026-11-22",
+    "motif": "handoff"
+  },
+  {
+    "slug": "flow-efficiency-services-firms",
+    "cat": "Operations",
+    "title": "Flow efficiency: the number that explains why simple work takes weeks",
+    "dek": "The work takes hours. The case takes weeks. Little's Law and a little queuing theory explain the gap, and how to close it.",
+    "description": "What flow efficiency is, why knowledge work often sits at 5 to 15 per cent, how Little's Law links open work to cycle time, and how services firms can measure and reduce waiting.",
+    "date": "2026-11-22",
+    "motif": "queue"
+  },
+  {
+    "slug": "why-automation-programs-stall",
+    "cat": "Automation",
+    "title": "Why automation programs stall, and how to choose your first five",
+    "dek": "From RPA to generative AI, most pilots never pay back. The problem is rarely the technology. It is what gets chosen for automation.",
+    "description": "Why 30 to 50 per cent of RPA projects and most generative AI pilots fail to deliver, why automating non-bottleneck steps rarely pays, and five tests for choosing automations that do.",
+    "date": "2026-11-22",
+    "motif": "bottleneck"
+  },
+  {
+    "slug": "automation-business-case-cfo",
+    "cat": "Automation",
+    "title": "How to build an automation business case your CFO will sign",
+    "dek": "Hours saved are not dollars saved. A structure for sizing automation that survives a sceptical finance team, with a worked example.",
+    "description": "A practical method for automation ROI: measured volumes, automation rate, adoption ramps, risk adjustment and full-life costs, plus how to separate capacity released from cash realised.",
+    "date": "2026-11-22",
+    "motif": "case"
+  },
+  {
+    "slug": "map-work-without-monitoring-people",
+    "cat": "Privacy",
+    "title": "How to map work without monitoring people",
+    "dek": "Process discovery and employee surveillance are different things. Here is what the law says in Australia, the UK and the US, and the design principles that keep them apart.",
+    "description": "Workplace surveillance and privacy law for process discovery in Australia (NSW, ACT, Victoria, Privacy Act), the UK (ICO guidance) and the US (New York, California), and seven privacy-first design principles.",
+    "date": "2026-11-22",
+    "motif": "privacy"
+  }
+]

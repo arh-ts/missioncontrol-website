@@ -1,0 +1,35 @@
+# Mission Control
+
+> Mission Control is operational intelligence for services organisations. It maps how work flows between people and teams, shows where it stalls, and tells you what to automate, with the business case attached. It is deployed and run with clients by the Mission Control team, and serves organisations in Australia, the United States and the United Kingdom.
+
+Key facts:
+- Category: operational intelligence and process automation for services businesses (accounting, legal, insurance, financial services, property, recruitment, agencies, healthcare administration).
+- Delivery: our team sets it up, provides a dashboard and reports, and builds the automations worth doing.
+- Pricing structure: implementation fee, monthly platform fee, automations billed separately. Quoted upfront after scoping.
+- Privacy: measures how work moves, not what it says. No email, message or document contents; no rankings of individual staff.
+- Contact: hello@missioncntrl.io; book a briefing at https://missioncntrl.io/briefing
+
+## Pages
+- [Home](https://missioncntrl.io/): What Mission Control is: a live map of how work moves through a services organisation, where it stalls, and what is worth automating.
+- [Platform](https://missioncntrl.io/platform): The platform: live map, bottlenecks and moments, and automations ranked by what they return.
+- [How we work](https://missioncntrl.io/how-we-work): How engagements run: implementation fee, monthly platform fee, automations billed separately; deployed and run by our team.
+- [Industries](https://missioncntrl.io/industries): Who it is for: services organisations where the product is the work. Physical operations are on the roadmap.
+- [Security and privacy](https://missioncntrl.io/security): What is captured (the movement of work) and never captured (contents of emails, files, or staff rankings), plus rollout with staff.
+- [Company](https://missioncntrl.io/company): The team behind Mission Control and why it was built.
+- [Book a briefing](https://missioncntrl.io/briefing): Book a 30-minute briefing.
+
+## Newsroom
+- [Newsroom](https://missioncntrl.io/news): research and opinion on operations, automation and hand-offs.
+- [Work about work is a hand-off problem, not a people problem](https://missioncntrl.io/news/work-about-work-is-a-handoff-problem): Surveys keep finding that more than half the week goes on coordination. The cause is not individual habits. It is the hand-offs nobody designed. Markdown: https://missioncntrl.io/news/work-about-work-is-a-handoff-problem.md
+- [Flow efficiency: the number that explains why simple work takes weeks](https://missioncntrl.io/news/flow-efficiency-services-firms): The work takes hours. The case takes weeks. Little's Law and a little queuing theory explain the gap, and how to close it. Markdown: https://missioncntrl.io/news/flow-efficiency-services-firms.md
+- [Why automation programs stall, and how to choose your first five](https://missioncntrl.io/news/why-automation-programs-stall): From RPA to generative AI, most pilots never pay back. The problem is rarely the technology. It is what gets chosen for automation. Markdown: https://missioncntrl.io/news/why-automation-programs-stall.md
+- [How to build an automation business case your CFO will sign](https://missioncntrl.io/news/automation-business-case-cfo): Hours saved are not dollars saved. A structure for sizing automation that survives a sceptical finance team, with a worked example. Markdown: https://missioncntrl.io/news/automation-business-case-cfo.md
+- [How to map work without monitoring people](https://missioncntrl.io/news/map-work-without-monitoring-people): Process discovery and employee surveillance are different things. Here is what the law says in Australia, the UK and the US, and the design principles that keep them apart. Markdown: https://missioncntrl.io/news/map-work-without-monitoring-people.md
+
+## Legal
+- [Privacy notice](https://missioncntrl.io/privacy)
+- [Website terms](https://missioncntrl.io/terms)
+
+## Optional
+- [Full text for language models](https://missioncntrl.io/llms-full.txt)
+- [RSS feed](https://missioncntrl.io/news/feed.xml)
